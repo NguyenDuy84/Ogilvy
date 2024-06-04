@@ -1063,7 +1063,7 @@ i, em {
 }
 
 a {
-    color: #eb3f43;
+    color: #44d430;
     outline: none;
 }
 
@@ -3912,12 +3912,13 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     height: 100%;
     overflow: hidden;
     width: 50%
+    
 }
 
 .splash__project {
-    height: 30vh;
+    height: 24vh;
     position: relative;
-    width: 50vh
+    width: 36vh
 }
 
 .splash__project.active .splash__overlay {
