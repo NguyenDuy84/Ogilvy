@@ -3979,10 +3979,10 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash__img {
-    height: 54%;
-    margin: 15.33% 23%;
+    height: 90%;
+    margin: 15% 23%;
     position: absolute;
-    width: 54%
+    width: 90%
 }
 
 .splash__img img {
