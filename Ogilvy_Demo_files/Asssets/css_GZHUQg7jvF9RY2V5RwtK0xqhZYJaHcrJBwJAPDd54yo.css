@@ -3916,9 +3916,9 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash__project {
-    height: 24vh;
+    height: 22.5vh;
     position: relative;
-    width: 36vh
+    width: 33.75vh
 }
 
 .splash__project.active .splash__overlay {
@@ -3980,10 +3980,10 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash__img {
-    height: 85%;
+    height: 54%;
     margin: 15.33% 23%;
     position: absolute;
-    width: 85%
+    width: 54%
 }
 
 .splash__img img {
