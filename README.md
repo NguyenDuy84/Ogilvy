@@ -1,2 +1,0 @@
-# Ogilvy
-Demo
