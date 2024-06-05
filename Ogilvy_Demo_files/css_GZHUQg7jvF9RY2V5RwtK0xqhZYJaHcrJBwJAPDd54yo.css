@@ -10245,7 +10245,7 @@ html[lang="zh-hans"] .footer-right-nav li.social-list ul li span {
 
 .hero--red {
     background-color: linear-gradient(135deg, #0252cb 0%, #020238 100%);
-    color: #000;
+    color: white;
 }
 
 .hero--red .section__mask::before {
