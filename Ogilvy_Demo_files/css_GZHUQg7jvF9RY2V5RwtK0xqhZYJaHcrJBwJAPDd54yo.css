@@ -4866,8 +4866,8 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #eb3f43;
-    color: #fff;
+    background: #f7f6f6;
+    color: #01021e;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
