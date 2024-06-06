@@ -29,17 +29,9 @@
 	<script
 		type="text/javascript">(window.NREUM || (NREUM = {})).init = { ajax: { deny_list: ["bam.nr-data.net"] } }; (window.NREUM || (NREUM = {})).loader_config = { licenseKey: "290a3572ee", applicationID: "213500175" };;/*! For license information please see nr-loader-rum-1.260.1.min.js.LICENSE.txt */
 			(() => { var e, t, r = { 234: (e, t, r) => { "use strict"; r.d(t, { P_: () => v, Mt: () => b, C5: () => s, OP: () => k, lF: () => P, Yu: () => _, Dg: () => m, CX: () => c, GE: () => w, sU: () => N }); var n = r(8632), i = r(9567); const o = { beacon: n.ce.beacon, errorBeacon: n.ce.errorBeacon, licenseKey: void 0, applicationID: void 0, sa: void 0, queueTime: void 0, applicationTime: void 0, ttGuid: void 0, user: void 0, account: void 0, product: void 0, extra: void 0, jsAttributes: {}, userAttributes: void 0, atts: void 0, transactionName: void 0, tNamePlain: void 0 }, a = {}; function s(e) { if (!e) throw new Error("All info objects require an agent identifier!"); if (!a[e]) throw new Error("Info for ".concat(e, " was never set")); return a[e] } function c(e, t) { if (!e) throw new Error("All info objects require an agent identifier!"); a[e] = (0, i.D)(t, o); const r = (0, n.ek)(e); r && (r.info = a[e]) } const u = e => { if (!e || "string" != typeof e) return !1; try { document.createDocumentFragment().querySelector(e) } catch { return !1 } return !0 }; var d = r(7056), l = r(50); const f = "[data-nr-mask]", g = () => { const e = { mask_selector: "*", block_selector: "[data-nr-block]", mask_input_options: { color: !1, date: !1, "datetime-local": !1, email: !1, month: !1, number: !1, range: !1, search: !1, tel: !1, text: !1, time: !1, url: !1, week: !1, textarea: !1, select: !1, password: !0 } }; return { feature_flags: [], proxy: { assets: void 0, beacon: void 0 }, privacy: { cookies_enabled: !0 }, ajax: { deny_list: void 0, block_internal: !0, enabled: !0, harvestTimeSeconds: 10, autoStart: !0 }, distributed_tracing: { enabled: void 0, exclude_newrelic_header: void 0, cors_use_newrelic_header: void 0, cors_use_tracecontext_headers: void 0, allowed_origins: void 0 }, session: { expiresMs: d.oD, inactiveMs: d.Hb }, ssl: void 0, obfuscate: void 0, jserrors: { enabled: !0, harvestTimeSeconds: 10, autoStart: !0 }, metrics: { enabled: !0, autoStart: !0 }, page_action: { enabled: !0, harvestTimeSeconds: 30, autoStart: !0 }, page_view_event: { enabled: !0, autoStart: !0 }, page_view_timing: { enabled: !0, harvestTimeSeconds: 30, long_task: !1, autoStart: !0 }, session_trace: { enabled: !0, harvestTimeSeconds: 10, autoStart: !0 }, harvest: { tooManyRequestsDelay: 60 }, session_replay: { autoStart: !0, enabled: !1, harvestTimeSeconds: 60, preload: !1, sampling_rate: 10, error_sampling_rate: 100, collect_fonts: !1, inline_images: !1, inline_stylesheet: !0, mask_all_inputs: !0, get mask_text_selector() { return e.mask_selector }, set mask_text_selector(t) { u(t) ? e.mask_selector = "".concat(t, ",").concat(f) : "" === t || null === t ? e.mask_selector = f : (0, l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.", t) }, get block_class() { return "nr-block" }, get ignore_class() { return "nr-ignore" }, get mask_text_class() { return "nr-mask" }, get block_selector() { return e.block_selector }, set block_selector(t) { u(t) ? e.block_selector += ",".concat(t) : "" !== t && (0, l.Z)("An invalid session_replay.block_selector was provided and will not be used", t) }, get mask_input_options() { return e.mask_input_options }, set mask_input_options(t) { t && "object" == typeof t ? e.mask_input_options = { ...t, password: !0 } : (0, l.Z)("An invalid session_replay.mask_input_option was provided and will not be used", t) } }, spa: { enabled: !0, harvestTimeSeconds: 10, autoStart: !0 }, soft_navigations: { enabled: !0, harvestTimeSeconds: 10, autoStart: !0 } } }, p = {}, h = "All configuration objects require an agent identifier!"; function v(e) { if (!e) throw new Error(h); if (!p[e]) throw new Error("Configuration for ".concat(e, " was never set")); return p[e] } function m(e, t) { if (!e) throw new Error(h); p[e] = (0, i.D)(t, g()); const r = (0, n.ek)(e); r && (r.init = p[e]) } function b(e, t) { if (!e) throw new Error(h); var r = v(e); if (r) { for (var n = t.split("."), i = 0; i < n.length - 1; i++)if ("object" != typeof (r = r[n[i]])) return; r = r[n[n.length - 1]] } return r } const y = { accountID: void 0, trustKey: void 0, agentID: void 0, licenseKey: void 0, applicationID: void 0, xpid: void 0 }, A = {}; function w(e, t) { if (!e) throw new Error("All loader-config objects require an agent identifier!"); A[e] = (0, i.D)(t, y); const r = (0, n.ek)(e); r && (r.loader_config = A[e]) } const _ = (0, n.mF)().o; var E = r(385), x = r(6818); const D = { buildEnv: x.Re, distMethod: x.gF, version: x.q4, originTime: E.sK }, S = { customTransaction: void 0, disabled: !1, isolatedBacklog: !1, loaderType: void 0, maxBytes: 3e4, onerror: void 0, origin: "" + E._A.location, ptid: void 0, releaseIds: {}, appMetadata: {}, session: void 0, denyList: void 0, harvestCount: 0, timeKeeper: void 0 }, R = {}; function k(e) { if (!e) throw new Error("All runtime objects require an agent identifier!"); if (!R[e]) throw new Error("Runtime for ".concat(e, " was never set")); return R[e] } function N(e, t) { if (!e) throw new Error("All runtime objects require an agent identifier!"); R[e] = { ...(0, i.D)(t, S), ...D }; const r = (0, n.ek)(e); r && (r.runtime = R[e]) } function P(e) { return function (e) { try { const t = s(e); return !!t.licenseKey && !!t.errorBeacon && !!t.applicationID } catch (e) { return !1 } }(e) } }, 9567: (e, t, r) => { "use strict"; r.d(t, { D: () => i }); var n = r(50); function i(e, t) { try { if (!e || "object" != typeof e) return (0, n.Z)("Setting a Configurable requires an object as input"); if (!t || "object" != typeof t) return (0, n.Z)("Setting a Configurable requires a model to set its initial properties"); const r = Object.create(Object.getPrototypeOf(t), Object.getOwnPropertyDescriptors(t)), o = 0 === Object.keys(r).length ? e : r; for (let a in o) if (void 0 !== e[a]) try { if (null === e[a]) { r[a] = null; continue } Array.isArray(e[a]) && Array.isArray(t[a]) ? r[a] = Array.from(new Set([...e[a], ...t[a]])) : "object" == typeof e[a] && "object" == typeof t[a] ? r[a] = i(e[a], t[a]) : r[a] = e[a] } catch (e) { (0, n.Z)("An error occurred while setting a property of a Configurable", e) } return r } catch (e) { (0, n.Z)("An error occured while setting a Configurable", e) } } }, 6818: (e, t, r) => { "use strict"; r.d(t, { Re: () => i, gF: () => o, q4: () => n }); const n = "1.260.1", i = "PROD", o = "CDN" }, 385: (e, t, r) => { "use strict"; r.d(t, { Nk: () => l, Tt: () => c, _A: () => a, iS: () => s, il: () => i, sK: () => f, ux: () => u, v6: () => o, w1: () => d }); var n = r(7894); const i = "undefined" != typeof window && !!window.document, o = "undefined" != typeof WorkerGlobalScope && ("undefined" != typeof self && self instanceof WorkerGlobalScope && self.navigator instanceof WorkerNavigator || "undefined" != typeof globalThis && globalThis instanceof WorkerGlobalScope && globalThis.navigator instanceof WorkerNavigator), a = i ? window : "undefined" != typeof WorkerGlobalScope && ("undefined" != typeof self && self instanceof WorkerGlobalScope && self || "undefined" != typeof globalThis && globalThis instanceof WorkerGlobalScope && globalThis), s = Boolean("hidden" === a?.document?.visibilityState), c = /iPad|iPhone|iPod/.test(a.navigator?.userAgent), u = c && "undefined" == typeof SharedWorker, d = ((() => { const e = a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/); Array.isArray(e) && e.length >= 2 && e[1] })(), Boolean(i && window.document.documentMode)), l = !!a.navigator?.sendBeacon, f = Date.now() - (0, n.z)() }, 1117: (e, t, r) => { "use strict"; r.d(t, { w: () => o }); var n = r(50); const i = { agentIdentifier: "", ee: void 0 }; class o { constructor(e) { try { if ("object" != typeof e) return (0, n.Z)("shared context requires an object as input"); this.sharedContext = {}, Object.assign(this.sharedContext, i), Object.entries(e).forEach((e => { let [t, r] = e; Object.keys(i).includes(t) && (this.sharedContext[t] = r) })) } catch (e) { (0, n.Z)("An error occurred while setting SharedContext", e) } } } }, 8e3: (e, t, r) => { "use strict"; r.d(t, { LP: () => l, RP: () => c, o5: () => u }); var n = r(8325), i = r(1284), o = r(4322), a = r(3325); const s = {}; function c(e, t) { const r = { staged: !1, priority: a.p[t] || 0 }; d(e), s[e].get(t) || s[e].set(t, r) } function u(e, t) { d(e), s[e].get(t) && s[e].delete(t), s[e].size && f(e) } function d(e) { if (!e) throw new Error("agentIdentifier required"); s[e] || (s[e] = new Map) } function l() { let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "", t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "feature", r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; if (d(e), !e || !s[e].get(t) || r) return g(e, t); s[e].get(t).staged = !0, f(e) } function f(e) { const t = Array.from(s[e]); t.every((e => { let [t, r] = e; return r.staged })) && (t.sort(((e, t) => e[1].priority - t[1].priority)), t.forEach((t => { let [r] = t; s[e].delete(r), g(e, r) }))) } function g(e, t) { const r = e ? n.ee.get(e) : n.ee, a = o.X.handlers; if (r.backlog && a) { var s = r.backlog[t], c = a[t]; if (c) { for (var u = 0; s && u < s.length; ++u)p(s[u], c); (0, i.D)(c, (function (e, t) { (0, i.D)(t, (function (t, r) { r[0].on(e, r[1]) })) })) } r.isolatedBacklog || delete a[t], r.backlog[t] = null, r.emit("drain-" + t, []) } } function p(e, t) { var r = e[1]; (0, i.D)(t[r], (function (t, r) { var n = e[0]; if (r[0] === n) { var i = r[1], o = e[3], a = e[2]; i.apply(o, a) } })) } }, 8325: (e, t, r) => { "use strict"; r.d(t, { A: () => c, ee: () => u }); var n = r(8632), i = r(2210), o = r(234); class a { constructor(e) { this.contextId = e } } var s = r(3117); const c = "nr@context:".concat(s.a), u = function e(t, r) { var n = {}, s = {}, d = {}, l = !1; try { l = 16 === r.length && (0, o.OP)(r).isolatedBacklog } catch (e) { } var f = { on: p, addEventListener: p, removeEventListener: function (e, t) { var r = n[e]; if (!r) return; for (var i = 0; i < r.length; i++)r[i] === t && r.splice(i, 1) }, emit: function (e, r, n, i, o) { !1 !== o && (o = !0); if (u.aborted && !i) return; t && o && t.emit(e, r, n); for (var a = g(n), c = h(e), d = c.length, l = 0; l < d; l++)c[l].apply(a, r); var p = m()[s[e]]; p && p.push([f, e, r, a]); return a }, get: v, listeners: h, context: g, buffer: function (e, t) { const r = m(); if (t = t || "feature", f.aborted) return; Object.entries(e || {}).forEach((e => { let [n, i] = e; s[i] = t, t in r || (r[t] = []) })) }, abort: function () { f._aborted = !0, Object.keys(f.backlog).forEach((e => { delete f.backlog[e] })) }, isBuffering: function (e) { return !!m()[s[e]] }, debugId: r, backlog: l ? {} : t && "object" == typeof t.backlog ? t.backlog : {}, isolatedBacklog: l }; return Object.defineProperty(f, "aborted", { get: () => { let e = f._aborted || !1; return e || (t && (e = t.aborted), e) } }), f; function g(e) { return e && e instanceof a ? e : e ? (0, i.X)(e, c, (() => new a(c))) : new a(c) } function p(e, t) { n[e] = h(e).concat(t) } function h(e) { return n[e] || [] } function v(t) { return d[t] = d[t] || e(f, t) } function m() { return f.backlog } }(void 0, "globalEE"), d = (0, n.fP)(); d.ee || (d.ee = u) }, 5546: (e, t, r) => { "use strict"; r.d(t, { E: () => n, p: () => i }); var n = r(8325).ee.get("handle"); function i(e, t, r, i, o) { o ? (o.buffer([e], i), o.emit(e, t, r)) : (n.buffer([e], i), n.emit(e, t, r)) } }, 4322: (e, t, r) => { "use strict"; r.d(t, { X: () => o }); var n = r(5546); o.on = a; var i = o.handlers = {}; function o(e, t, r, o) { a(o || n.E, i, e, t, r) } function a(e, t, r, i, o) { o || (o = "feature"), e || (e = n.E); var a = t[o] = t[o] || {}; (a[r] = a[r] || []).push([e, i]) } }, 3239: (e, t, r) => { "use strict"; r.d(t, { bP: () => s, iz: () => c, m$: () => a }); var n = r(385); let i = !1, o = !1; try { const e = { get passive() { return i = !0, !1 }, get signal() { return o = !0, !1 } }; n._A.addEventListener("test", null, e), n._A.removeEventListener("test", null, e) } catch (e) { } function a(e, t) { return i || o ? { capture: !!e, passive: i, signal: t } : !!e } function s(e, t) { let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], n = arguments.length > 3 ? arguments[3] : void 0; window.addEventListener(e, t, a(r, n)) } function c(e, t) { let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], n = arguments.length > 3 ? arguments[3] : void 0; document.addEventListener(e, t, a(r, n)) } }, 3117: (e, t, r) => { "use strict"; r.d(t, { a: () => n }); const n = (0, r(4402).Rl)() }, 4402: (e, t, r) => { "use strict"; r.d(t, { Rl: () => a, ky: () => s }); var n = r(385); const i = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"; function o(e, t) { return e ? 15 & e[t] : 16 * Math.random() | 0 } function a() { const e = n._A?.crypto || n._A?.msCrypto; let t, r = 0; return e && e.getRandomValues && (t = e.getRandomValues(new Uint8Array(30))), i.split("").map((e => "x" === e ? o(t, r++).toString(16) : "y" === e ? (3 & o() | 8).toString(16) : e)).join("") } function s(e) { const t = n._A?.crypto || n._A?.msCrypto; let r, i = 0; t && t.getRandomValues && (r = t.getRandomValues(new Uint8Array(e))); const a = []; for (var s = 0; s < e; s++)a.push(o(r, i++).toString(16)); return a.join("") } }, 7056: (e, t, r) => { "use strict"; r.d(t, { Bq: () => n, Hb: () => a, IK: () => u, K4: () => i, oD: () => o, uT: () => c, wO: () => s }); const n = "NRBA", i = "SESSION", o = 144e5, a = 18e5, s = { STARTED: "session-started", PAUSE: "session-pause", RESET: "session-reset", RESUME: "session-resume", UPDATE: "session-update" }, c = { SAME_TAB: "same-tab", CROSS_TAB: "cross-tab" }, u = { OFF: 0, FULL: 1, ERROR: 2 } }, 7894: (e, t, r) => { "use strict"; function n() { return Math.floor(performance.now()) } r.d(t, { z: () => n }) }, 50: (e, t, r) => { "use strict"; function n(e, t) { "function" == typeof console.warn && (console.warn("New Relic: ".concat(e)), t && console.warn(t)) } r.d(t, { Z: () => n }) }, 2825: (e, t, r) => { "use strict"; r.d(t, { N: () => c, T: () => s }); var n = r(8325), i = r(385); const o = "newrelic"; const a = new Set, s = {}; function c(e, t) { const r = n.ee.get(t); s[t] ??= {}, e && "object" == typeof e && (a.has(t) || (r.emit("rumresp", [e]), s[t] = e, a.add(t), function () { let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}; try { i._A.dispatchEvent(new CustomEvent(o, { detail: e })) } catch (e) { } }({ loaded: !0 }))) } }, 2210: (e, t, r) => { "use strict"; r.d(t, { X: () => i }); var n = Object.prototype.hasOwnProperty; function i(e, t, r) { if (n.call(e, t)) return e[t]; var i = r(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, t, { value: i, writable: !0, enumerable: !1 }), i } catch (e) { } return e[t] = i, i } }, 7872: (e, t, r) => { "use strict"; function n(e) { var t = this; let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 500, n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}; const i = n?.leading || !1; let o; return function () { for (var n = arguments.length, a = new Array(n), s = 0; s < n; s++)a[s] = arguments[s]; i && void 0 === o && (e.apply(t, a), o = setTimeout((() => { o = clearTimeout(o) }), r)), i || (clearTimeout(o), o = setTimeout((() => { e.apply(t, a) }), r)) } } function i(e) { var t = this; let r = !1; return function () { if (!r) { r = !0; for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++)i[o] = arguments[o]; e.apply(t, i) } } } r.d(t, { D: () => n, Z: () => i }) }, 1284: (e, t, r) => { "use strict"; r.d(t, { D: () => n }); const n = (e, t) => Object.entries(e || {}).map((e => { let [r, n] = e; return t(r, n) })) }, 4351: (e, t, r) => { "use strict"; r.d(t, { P: () => o }); var n = r(8325); const i = () => { const e = new WeakSet; return (t, r) => { if ("object" == typeof r && null !== r) { if (e.has(r)) return; e.add(r) } return r } }; function o(e) { try { return JSON.stringify(e, i()) } catch (e) { try { n.ee.emit("internal-error", [e]) } catch (e) { } } } }, 3960: (e, t, r) => { "use strict"; r.d(t, { KB: () => a, b2: () => o }); var n = r(3239); function i() { return "undefined" == typeof document || "complete" === document.readyState } function o(e, t) { if (i()) return e(); (0, n.bP)("load", e, t) } function a(e) { if (i()) return e(); (0, n.iz)("DOMContentLoaded", e) } }, 8632: (e, t, r) => { "use strict"; r.d(t, { EZ: () => d, ce: () => o, ek: () => u, fP: () => a, gG: () => l, h5: () => c, mF: () => s }); var n = r(385), i = r(7894); const o = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net" }; function a() { return n._A.NREUM || (n._A.NREUM = {}), void 0 === n._A.newrelic && (n._A.newrelic = n._A.NREUM), n._A.NREUM } function s() { let e = a(); return e.o || (e.o = { ST: n._A.setTimeout, SI: n._A.setImmediate, CT: n._A.clearTimeout, XHR: n._A.XMLHttpRequest, REQ: n._A.Request, EV: n._A.Event, PR: n._A.Promise, MO: n._A.MutationObserver, FETCH: n._A.fetch }), e } function c(e, t) { let r = a(); r.initializedAgents ??= {}, t.initializedAt = { ms: (0, i.z)(), date: new Date }, r.initializedAgents[e] = t } function u(e) { let t = a(); return t.initializedAgents?.[e] } function d(e, t) { a()[e] = t } function l() { return function () { let e = a(); const t = e.info || {}; e.info = { beacon: o.beacon, errorBeacon: o.errorBeacon, ...t } }(), function () { let e = a(); const t = e.init || {}; e.init = { ...t } }(), s(), function () { let e = a(); const t = e.loader_config || {}; e.loader_config = { ...t } }(), a() } }, 7956: (e, t, r) => { "use strict"; r.d(t, { N: () => i }); var n = r(3239); function i(e) { let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], r = arguments.length > 2 ? arguments[2] : void 0, i = arguments.length > 3 ? arguments[3] : void 0; (0, n.iz)("visibilitychange", (function () { if (t) return void ("hidden" === document.visibilityState && e()); e(document.visibilityState) }), r, i) } }, 3081: (e, t, r) => { "use strict"; r.d(t, { gF: () => o, mY: () => i, t9: () => n, vz: () => s, xS: () => a }); const n = r(3325).D.metrics, i = "sm", o = "cm", a = "storeSupportabilityMetrics", s = "storeEventMetrics" }, 7633: (e, t, r) => { "use strict"; r.d(t, { t: () => n }); const n = r(3325).D.pageViewEvent }, 9251: (e, t, r) => { "use strict"; r.d(t, { t: () => n }); const n = r(3325).D.pageViewTiming }, 7144: (e, t, r) => { "use strict"; r.d(t, { Ef: () => i }); var n = r(7056); r(3325).D.sessionReplay; const i = { RECORD: "recordReplay", PAUSE: "pauseReplay", REPLAY_RUNNING: "replayRunning", ERROR_DURING_REPLAY: "errorDuringReplay" }; n.IK.ERROR, n.IK.FULL, n.IK.OFF }, 5938: (e, t, r) => { "use strict"; r.d(t, { W: () => i }); var n = r(8325); class i { constructor(e, t, r) { this.agentIdentifier = e, this.aggregator = t, this.ee = n.ee.get(e), this.featureName = r, this.blocked = !1 } } }, 2758: (e, t, r) => { "use strict"; r.d(t, { j: () => E }); var n = r(3325), i = r(234), o = r(5546), a = r(8325), s = r(8e3), c = r(3960), u = r(385), d = r(50), l = r(3081), f = r(8632), g = r(7144); const p = ["setErrorHandler", "finished", "addToTrace", "addRelease", "addPageAction", "setCurrentRouteName", "setPageViewName", "setCustomAttribute", "interaction", "noticeError", "setUserId", "setApplicationVersion", "start", g.Ef.RECORD, g.Ef.PAUSE], h = ["setErrorHandler", "finished", "addToTrace", "addRelease"]; var v = r(7894), m = r(7056); function b() { const e = (0, f.gG)(); p.forEach((t => { e[t] = function () { for (var r = arguments.length, n = new Array(r), i = 0; i < r; i++)n[i] = arguments[i]; return function (t) { for (var r = arguments.length, n = new Array(r > 1 ? r - 1 : 0), i = 1; i < r; i++)n[i - 1] = arguments[i]; let o = []; return Object.values(e.initializedAgents).forEach((e => { e.exposed && e.api[t] && o.push(e.api[t](...n)) })), o.length > 1 ? o : o[0] }(t, ...n) } })) } const y = {}; var A = r(2825); const w = e => { const t = e.startsWith("http"); e += "/", r.p = t ? e : "https://" + e }; let _ = !1; function E(e) { let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, p = arguments.length > 2 ? arguments[2] : void 0, E = arguments.length > 3 ? arguments[3] : void 0, { init: x, info: D, loader_config: S, runtime: R = { loaderType: p }, exposed: k = !0 } = t; const N = (0, f.gG)(); D || (x = N.init, D = N.info, S = N.loader_config), (0, i.Dg)(e.agentIdentifier, x || {}), (0, i.GE)(e.agentIdentifier, S || {}), D.jsAttributes ??= {}, u.v6 && (D.jsAttributes.isWorker = !0), (0, i.CX)(e.agentIdentifier, D); const P = (0, i.P_)(e.agentIdentifier), j = [D.beacon, D.errorBeacon]; _ || (P.proxy.assets && (w(P.proxy.assets), j.push(P.proxy.assets)), P.proxy.beacon && j.push(P.proxy.beacon), b(), (0, f.EZ)("activatedFeatures", A.T), e.runSoftNavOverSpa &&= !0 === P.soft_navigations.enabled && P.feature_flags.includes("soft_nav")), R.denyList = [...P.ajax.deny_list || [], ...P.ajax.block_internal ? j : []], R.ptid = e.agentIdentifier, (0, i.sU)(e.agentIdentifier, R), void 0 === e.api && (e.api = function (e, t) { let f = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; t || (0, s.RP)(e, "api"); const p = {}; var b = a.ee.get(e), A = b.get("tracer"); y[e] = m.IK.OFF, b.on(g.Ef.REPLAY_RUNNING, (t => { y[e] = t })); var w = "api-", _ = w + "ixn-"; function E(t, r, n, o) { const a = (0, i.C5)(e); return null === r ? delete a.jsAttributes[t] : (0, i.CX)(e, { ...a, jsAttributes: { ...a.jsAttributes, [t]: r } }), S(w, n, !0, o || null === r ? "session" : void 0)(t, r) } function x() { } h.forEach((e => { p[e] = S(w, e, !0, "api") })), p.addPageAction = S(w, "addPageAction", !0, n.D.pageAction), p.setPageViewName = function (t, r) { if ("string" == typeof t) return "/" !== t.charAt(0) && (t = "/" + t), (0, i.OP)(e).customTransaction = (r || "http://custom.transaction") + t, S(w, "setPageViewName", !0)() }, p.setCustomAttribute = function (e, t) { let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]; if ("string" == typeof e) { if (["string", "number", "boolean"].includes(typeof t) || null === t) return E(e, t, "setCustomAttribute", r); (0, d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t, "> was provided.")) } else (0, d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e, "> was provided.")) }, p.setUserId = function (e) { if ("string" == typeof e || null === e) return E("enduser.id", e, "setUserId", !0); (0, d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e, "> was provided.")) }, p.setApplicationVersion = function (e) { if ("string" == typeof e || null === e) return E("application.version", e, "setApplicationVersion", !1); (0, d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e, ">.")) }, p.start = () => { try { (0, o.p)(l.xS, ["API/start/called"], void 0, n.D.metrics, b), b.emit("manual-start-all") } catch (e) { (0, d.Z)("An unexpected issue occurred", e) } }, p[g.Ef.RECORD] = function () { (0, o.p)(l.xS, ["API/recordReplay/called"], void 0, n.D.metrics, b), (0, o.p)(g.Ef.RECORD, [], void 0, n.D.sessionReplay, b) }, p[g.Ef.PAUSE] = function () { (0, o.p)(l.xS, ["API/pauseReplay/called"], void 0, n.D.metrics, b), (0, o.p)(g.Ef.PAUSE, [], void 0, n.D.sessionReplay, b) }, p.interaction = function (e) { return (new x).get("object" == typeof e ? e : {}) }; const D = x.prototype = { createTracer: function (e, t) { var r = {}, i = this, a = "function" == typeof t; return (0, o.p)(l.xS, ["API/createTracer/called"], void 0, n.D.metrics, b), f || (0, o.p)(_ + "tracer", [(0, v.z)(), e, r], i, n.D.spa, b), function () { if (A.emit((a ? "" : "no-") + "fn-start", [(0, v.z)(), i, a], r), a) try { return t.apply(this, arguments) } catch (e) { const t = "string" == typeof e ? new Error(e) : e; throw A.emit("fn-err", [arguments, this, t], r), t } finally { A.emit("fn-end", [(0, v.z)()], r) } } } }; function S(e, t, r, i) { return function () { return (0, o.p)(l.xS, ["API/" + t + "/called"], void 0, n.D.metrics, b), i && (0, o.p)(e + t, [(0, v.z)(), ...arguments], r ? null : this, i, b), r ? void 0 : this } } function R() { r.e(75).then(r.bind(r, 7438)).then((t => { let { setAPI: r } = t; r(e), (0, s.LP)(e, "api") })).catch((e => { (0, d.Z)("Downloading runtime APIs failed...", e), b.abort() })) } return ["actionText", "setName", "setAttribute", "save", "ignore", "onEnd", "getContext", "end", "get"].forEach((e => { D[e] = S(_, e, void 0, f ? n.D.softNav : n.D.spa) })), p.setCurrentRouteName = f ? S(_, "routeName", void 0, n.D.softNav) : S(w, "routeName", !0, n.D.spa), p.noticeError = function (t, r) { "string" == typeof t && (t = new Error(t)), (0, o.p)(l.xS, ["API/noticeError/called"], void 0, n.D.metrics, b), (0, o.p)("err", [t, (0, v.z)(), !1, r, !!y[e]], void 0, n.D.jserrors, b) }, u.il ? (0, c.b2)((() => R()), !0) : R(), p }(e.agentIdentifier, E, e.runSoftNavOverSpa)), void 0 === e.exposed && (e.exposed = k), _ = !0 } }, 8993: (e, t, r) => { r.nc = (() => { try { return document?.currentScript?.nonce } catch (e) { } return "" })() }, 3325: (e, t, r) => { "use strict"; r.d(t, { D: () => n, p: () => i }); const n = { ajax: "ajax", jserrors: "jserrors", metrics: "metrics", pageAction: "page_action", pageViewEvent: "page_view_event", pageViewTiming: "page_view_timing", sessionReplay: "session_replay", sessionTrace: "session_trace", softNav: "soft_navigations", spa: "spa" }, i = { [n.pageViewEvent]: 1, [n.pageViewTiming]: 2, [n.metrics]: 3, [n.jserrors]: 4, [n.ajax]: 5, [n.sessionTrace]: 6, [n.pageAction]: 7, [n.spa]: 8, [n.softNav]: 9, [n.sessionReplay]: 10 } } }, n = {}; function i(e) { var t = n[e]; if (void 0 !== t) return t.exports; var o = n[e] = { exports: {} }; return r[e](o, o.exports, i), o.exports } i.m = r, i.d = (e, t) => { for (var r in t) i.o(t, r) && !i.o(e, r) && Object.defineProperty(e, r, { enumerable: !0, get: t[r] }) }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, r) => (i.f[r](e, t), t)), [])), i.u = e => "nr-rum-1.260.1.min.js", i.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, t = "NRBA-1.260.1.PROD:", i.l = (r, n, o, a) => { if (e[r]) e[r].push(n); else { var s, c; if (void 0 !== o) for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) { var l = u[d]; if (l.getAttribute("src") == r || l.getAttribute("data-webpack") == t + o) { s = l; break } } if (!s) { c = !0; var f = { 75: "sha512-WLWoh5UWJ/3XNXjYcJoBc8bSPHGDdu86FTMTgY1yxRTQeEmWWEBFFVPIfCRSbxd8K297eHg86RaJPD+UJxG1+w==" }; (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", t + o), s.src = r, 0 !== s.src.indexOf(window.location.origin + "/") && (s.crossOrigin = "anonymous"), f[a] && (s.integrity = f[a]) } e[r] = [n]; var g = (t, n) => { s.onerror = s.onload = null, clearTimeout(p); var i = e[r]; if (delete e[r], s.parentNode && s.parentNode.removeChild(s), i && i.forEach((e => e(n))), t) return t(n) }, p = setTimeout(g.bind(null, void 0, { type: "timeout", target: s }), 12e4); s.onerror = g.bind(null, s.onerror), s.onload = g.bind(null, s.onload), c && document.head.appendChild(s) } }, i.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.p = "https://js-agent.newrelic.com/", (() => { var e = { 50: 0, 832: 0 }; i.f.j = (t, r) => { var n = i.o(e, t) ? e[t] : void 0; if (0 !== n) if (n) r.push(n[2]); else { var o = new Promise(((r, i) => n = e[t] = [r, i])); r.push(n[2] = o); var a = i.p + i.u(t), s = new Error; i.l(a, (r => { if (i.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) { var o = r && ("load" === r.type ? "missing" : r.type), a = r && r.target && r.target.src; s.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", s.name = "ChunkLoadError", s.type = o, s.request = a, n[1](s) } }), "chunk-" + t, t) } }; var t = (t, r) => { var n, o, [a, s, c] = r, u = 0; if (a.some((t => 0 !== e[t]))) { for (n in s) i.o(s, n) && (i.m[n] = s[n]); if (c) c(i) } for (t && t(r); u < a.length; u++)o = a[u], i.o(e, o) && e[o] && e[o][0](), e[o] = 0 }, r = self["webpackChunk:NRBA-1.260.1.PROD"] = self["webpackChunk:NRBA-1.260.1.PROD"] || []; r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r)) })(), (() => { "use strict"; i(8993); var e = i(50), t = i(7144), r = i(4402), n = i(8325); class o { agentIdentifier; constructor() { let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, r.ky)(16); this.agentIdentifier = e, this.ee = n.ee.get(e) } #e(t) { for (var r = arguments.length, n = new Array(r > 1 ? r - 1 : 0), i = 1; i < r; i++)n[i - 1] = arguments[i]; if ("function" == typeof this.api?.[t]) return this.api[t](...n); (0, e.Z)("Call to agent api ".concat(t, " failed. The API is not currently initialized.")) } addPageAction(e, t) { return this.#e("addPageAction", e, t) } setPageViewName(e, t) { return this.#e("setPageViewName", e, t) } setCustomAttribute(e, t, r) { return this.#e("setCustomAttribute", e, t, r) } noticeError(e, t) { return this.#e("noticeError", e, t) } setUserId(e) { return this.#e("setUserId", e) } setApplicationVersion(e) { return this.#e("setApplicationVersion", e) } setErrorHandler(e) { return this.#e("setErrorHandler", e) } finished(e) { return this.#e("finished", e) } addRelease(e, t) { return this.#e("addRelease", e, t) } start(e) { return this.#e("start", e) } recordReplay() { return this.#e(t.Ef.RECORD) } pauseReplay() { return this.#e(t.Ef.PAUSE) } addToTrace(e) { return this.#e("addToTrace", e) } setCurrentRouteName(e) { return this.#e("setCurrentRouteName", e) } interaction() { return this.#e("interaction") } } var a = i(3325), s = i(234); const c = Object.values(a.D); function u(e) { const t = {}; return c.forEach((r => { t[r] = function (e, t) { return !0 === (0, s.Mt)(t, "".concat(e, ".enabled")) }(r, e) })), t } var d = i(2758); var l = i(8e3), f = i(5938), g = i(3960), p = i(385); const h = e => p.il && !0 === (0, s.Mt)(e, "privacy.cookies_enabled"); function v(e) { return !!s.Yu.MO && h(e) && !0 === (0, s.Mt)(e, "session_trace.enabled") } var m = i(7872); class b extends f.W { constructor(e, t, r) { let n = !(arguments.length > 3 && void 0 !== arguments[3]) || arguments[3]; super(e, t, r), this.auto = n, this.abortHandler = void 0, this.featAggregate = void 0, this.onAggregateImported = void 0, !1 === (0, s.Mt)(this.agentIdentifier, "".concat(this.featureName, ".autoStart")) && (this.auto = !1), this.auto ? (0, l.RP)(e, r) : this.ee.on("manual-start-all", (0, m.Z)((() => { (0, l.RP)(this.agentIdentifier, this.featureName), this.auto = !0, this.importAggregator() }))) } importAggregator() { let t, r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}; if (this.featAggregate || !this.auto) return; this.onAggregateImported = new Promise((e => { t = e })); const n = async () => { let n; try { if (h(this.agentIdentifier)) { const { setupAgentSession: e } = await i.e(75).then(i.bind(i, 7920)); n = e(this.agentIdentifier) } } catch (t) { (0, e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.", t), this.featureName === a.D.sessionReplay && this.abortHandler?.() } try { if (!this.#t(this.featureName, n)) return (0, l.LP)(this.agentIdentifier, this.featureName), void t(!1); const { lazyFeatureLoader: e } = await i.e(75).then(i.bind(i, 8582)), { Aggregate: o } = await e(this.featureName, "aggregate"); this.featAggregate = new o(this.agentIdentifier, this.aggregator, r), t(!0) } catch (r) { (0, e.Z)("Downloading and initializing ".concat(this.featureName, " failed..."), r), this.abortHandler?.(), (0, l.LP)(this.agentIdentifier, this.featureName, !0), t(!1), this.ee && this.ee.abort() } }; p.il ? (0, g.b2)((() => n()), !0) : n() } #t(e, t) { return e !== a.D.sessionReplay || (r = this.agentIdentifier, n = t, !(!v(r) || !n?.isNew && !n?.state.sessionReplayMode)); var r, n } } var y = i(7633); class A extends b { static featureName = y.t; constructor(e, t) { let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, t, y.t, r), this.importAggregator() } } var w = i(1117), _ = i(1284); class E extends w.w { constructor(e) { super(e), this.aggregatedData = {} } store(e, t, r, n, i) { var o = this.getBucket(e, t, r, i); return o.metrics = function (e, t) { t || (t = { count: 0 }); return t.count += 1, (0, _.D)(e, (function (e, r) { t[e] = x(r, t[e]) })), t }(n, o.metrics), o } merge(e, t, r, n, i) { var o = this.getBucket(e, t, n, i); if (o.metrics) { var a = o.metrics; a.count += r.count, (0, _.D)(r, (function (e, t) { if ("count" !== e) { var n = a[e], i = r[e]; i && !i.c ? a[e] = x(i.t, n) : a[e] = function (e, t) { if (!t) return e; t.c || (t = D(t.t)); return t.min = Math.min(e.min, t.min), t.max = Math.max(e.max, t.max), t.t += e.t, t.sos += e.sos, t.c += e.c, t }(i, a[e]) } })) } else o.metrics = r } storeMetric(e, t, r, n) { var i = this.getBucket(e, t, r); return i.stats = x(n, i.stats), i } getBucket(e, t, r, n) { this.aggregatedData[e] || (this.aggregatedData[e] = {}); var i = this.aggregatedData[e][t]; return i || (i = this.aggregatedData[e][t] = { params: r || {} }, n && (i.custom = n)), i } get(e, t) { return t ? this.aggregatedData[e] && this.aggregatedData[e][t] : this.aggregatedData[e] } take(e) { for (var t = {}, r = "", n = !1, i = 0; i < e.length; i++)t[r = e[i]] = Object.values(this.aggregatedData[r] || {}), t[r].length && (n = !0), delete this.aggregatedData[r]; return n ? t : null } } function x(e, t) { return null == e ? function (e) { e ? e.c++ : e = { c: 1 }; return e }(t) : t ? (t.c || (t = D(t.t)), t.c += 1, t.t += e, t.sos += e * e, e > t.max && (t.max = e), e < t.min && (t.min = e), t) : { t: e } } function D(e) { return { t: e, min: e, max: e, sos: e * e, c: 1 } } var S = i(8632), R = i(4351); var k = i(5546), N = i(7956), P = i(3239), j = i(9251), T = i(7894); class I extends b { static featureName = j.t; constructor(e, t) { let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, t, j.t, r), p.il && ((0, N.N)((() => (0, k.p)("docHidden", [(0, T.z)()], void 0, j.t, this.ee)), !0), (0, P.bP)("pagehide", (() => (0, k.p)("winPagehide", [(0, T.z)()], void 0, j.t, this.ee))), this.importAggregator()) } } var O = i(3081); class M extends b { static featureName = O.t9; constructor(e, t) { let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2]; super(e, t, O.t9, r), this.importAggregator() } } new class extends o { constructor(t, r) { super(r), p._A ? (this.sharedAggregator = new E({ agentIdentifier: this.agentIdentifier }), this.features = {}, (0, S.h5)(this.agentIdentifier, this), this.desiredFeatures = new Set(t.features || []), this.desiredFeatures.add(A), this.runSoftNavOverSpa = [...this.desiredFeatures].some((e => e.featureName === a.D.softNav)), (0, d.j)(this, t, t.loaderType || "agent"), this.run()) : (0, e.Z)("Failed to initialize the agent. Could not determine the runtime environment.") } get config() { return { info: this.info, init: this.init, loader_config: this.loader_config, runtime: this.runtime } } run() { try { const t = u(this.agentIdentifier), r = [...this.desiredFeatures]; r.sort(((e, t) => a.p[e.featureName] - a.p[t.featureName])), r.forEach((r => { if (!t[r.featureName] && r.featureName !== a.D.pageViewEvent) return; if (this.runSoftNavOverSpa && r.featureName === a.D.spa) return; if (!this.runSoftNavOverSpa && r.featureName === a.D.softNav) return; const n = function (e) { switch (e) { case a.D.ajax: return [a.D.jserrors]; case a.D.sessionTrace: return [a.D.ajax, a.D.pageViewEvent]; case a.D.sessionReplay: return [a.D.sessionTrace]; case a.D.pageViewTiming: return [a.D.pageViewEvent]; default: return [] } }(r.featureName); n.every((e => e in this.features)) || (0, e.Z)("".concat(r.featureName, " is enabled but one or more dependent features has not been initialized (").concat((0, R.P)(n), "). This may cause unintended consequences or missing data...")), this.features[r.featureName] = new r(this.agentIdentifier, this.sharedAggregator) })) } catch (t) { (0, e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -", t); for (const e in this.features) this.features[e].abortHandler?.(); const r = (0, S.fP)(); delete r.initializedAgents[this.agentIdentifier]?.api, delete r.initializedAgents[this.agentIdentifier]?.features, delete this.sharedAggregator; return r.ee.get(this.agentIdentifier).abort(), !1 } } }({ features: [A, I, M], loaderType: "lite" }) })() })();</script>
-	<meta name="description"
-		content="At Ogilvy, we design the brand; we turn the brand into an experience; and we communicate the brand’s story. We make brands matter. Learn more about Ogilvy’s capabilities at Ogilvy.com.">
 
-	<link rel="mask-icon" href="https://www.ogilvy.com/safari-pinned-tab.svg" color="#390607">
-	<link rel="icon" sizes="16x16" href="https://thumb.ac-illust.com/20/209c11e399b32fd81649e6ea093bc222_w.jpeg">
-	<link rel="icon" sizes="32x32" href="https://thumb.ac-illust.com/20/209c11e399b32fd81649e6ea093bc222_w.jpeg">
-	<link rel="apple-touch-icon" sizes="180x180" href="https://www.ogilvy.com/apple-touch-icon.png">
-
-	<meta property="og:site_name" content="Ogilvy">
-	<meta property="og:url" content="https://www.ogilvy.com/">
-	<meta property="og:title" content="Ogilvy">
+	<link rel="icon" sizes="16x16" href="./Ogilvy_Demo_files/Asssets/logo.png">
+	<link rel="icon" sizes="32x32" href="./Ogilvy_Demo_files/Asssets/logo.png">
 
 	<meta name="theme-color" content="#eb3f43">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
@@ -74,7 +66,6 @@
 			border-color: #000;
 		}
 	</style>
-	<link rel="alternate" hreflang="en" href="https://www.ogilvy.com/">
 	<script src="./Ogilvy_Demo_files/google_tag.script.js.download" defer="" type="text/javascript"></script>
 	<script
 		type="text/javascript">window.a2a_config = window.a2a_config || {}; a2a_config.callbacks = []; a2a_config.overlays = []; a2a_config.templates = {}; a2a_config.templates.twitter = "${title} ${link} via @Ogilvy";</script>
@@ -103,8 +94,7 @@
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header role="banner">
 		<div class="container">
-			<a href="https://www.ogilvy.com/#work" title="Ogilvy Logo" class="branding branding--splash"
-				aria-label="Ogilvy Logo"
+			<a title="Alt Media Logo" class="branding branding--splash" aria-label="Alt Media Logo"
 				style="--logo-scroll-color: rgb(0,0,0); --logo-scroll-position: 0%; --logo-scroll-margin: 0px; color: var(--logo-scroll-color); margin-top: calc(-50px + var(--logo-scroll-margin)); transform: translate3d(-50%, var(--logo-scroll-position), 0);">
 
 				<h1 class="branding__wordmark is-visually-hidden">Alt media</h1>
@@ -157,6 +147,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+								<span>FPT
+									<span class="work__item-client">FPT</span>
+								</span>
+							</h3>
 						</div>
 
 						<div class="splash__project" data-order="22"
@@ -164,6 +159,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 
 						<div class="splash__project" data-order="13"
@@ -196,6 +196,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="23"
 							style="position: absolute; left: 2152.17px; top: 0px;">
@@ -233,6 +238,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="12"
 							style="position: absolute; left: 3996.89px; top: 0px;">
@@ -251,6 +261,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+								<span>FPT
+									<span class="work__item-client">FPT</span>
+								</span>
+							</h3>
 						</div>
 						<div class="splash__project" data-order="9"
 							style="position: absolute; left: 4919.25px; top: 0px;">
@@ -300,7 +315,6 @@
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/MG_100.jpg">
 							</a>
 						</div>
-
 						<div class="splash__project" data-order="6"
 							style="position: absolute; left: 0px; top: 204.969px;">
 							<a class="splash__img " tabindex="-1">
@@ -324,6 +338,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="1"
 							style="position: absolute; left: 1229.81px; top: 204.969px;">
@@ -360,6 +379,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="5"
 							style="position: absolute; left: 3074.53px; top: 204.969px;">
@@ -372,6 +396,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+								<span>FPT
+									<span class="work__item-client">FPT</span>
+								</span>
+							</h3>
 						</div>
 						<div class="splash__project" data-order="22"
 							style="position: absolute; left: 3689.44px; top: 204.969px;">
@@ -408,6 +437,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="16"
 							style="position: absolute; left: 5534.15px; top: 204.969px;">
@@ -426,6 +460,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="8"
 							style="position: absolute; left: 6456.51px; top: 204.969px;">
@@ -456,6 +495,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="10"
 							style="position: absolute; left: 614.906px; top: 409.938px;">
@@ -474,6 +518,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="19"
 							style="position: absolute; left: 1537.26px; top: 409.938px;">
@@ -522,6 +571,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="16"
 							style="position: absolute; left: 3996.89px; top: 409.938px;">
@@ -540,6 +594,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="2"
 							style="position: absolute; left: 4919.25px; top: 409.938px;">
@@ -552,6 +611,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="24"
 							style="position: absolute; left: 5534.15px; top: 409.938px;">
@@ -576,6 +640,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 
 						<div class="splash__project" data-order="22"
@@ -583,6 +652,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 
 						<div class="splash__project" data-order="13"
@@ -615,6 +689,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="23"
 							style="position: absolute; left: 2152.17px; top: 0px;">
@@ -652,6 +731,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="12"
 							style="position: absolute; left: 3996.89px; top: 0px;">
@@ -670,6 +754,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="9"
 							style="position: absolute; left: 4919.25px; top: 0px;">
@@ -743,6 +832,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="1"
 							style="position: absolute; left: 1229.81px; top: 204.969px;">
@@ -779,6 +873,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="5"
 							style="position: absolute; left: 3074.53px; top: 204.969px;">
@@ -791,6 +890,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="22"
 							style="position: absolute; left: 3689.44px; top: 204.969px;">
@@ -827,6 +931,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="16"
 							style="position: absolute; left: 5534.15px; top: 204.969px;">
@@ -845,6 +954,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="8"
 							style="position: absolute; left: 6456.51px; top: 204.969px;">
@@ -875,6 +989,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="10"
 							style="position: absolute; left: 614.906px; top: 409.938px;">
@@ -893,6 +1012,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="19"
 							style="position: absolute; left: 1537.26px; top: 409.938px;">
@@ -941,6 +1065,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FUSE.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FUSE
+										<span class="work__item-client">FUSE</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="16"
 							style="position: absolute; left: 3996.89px; top: 409.938px;">
@@ -959,6 +1088,11 @@
 							<a class="splash__img " tabindex="-1">
 								<img sizes="50vw" src="./Ogilvy_Demo_files/Asssets/FPT.jpg">
 							</a>
+							<h3 class="work__item-title">
+									<span>FPT
+										<span class="work__item-client">FPT</span>
+									</span>
+								</h3>
 						</div>
 						<div class="splash__project" data-order="2"
 							style="position: absolute; left: 4919.25px; top: 409.938px;">
@@ -1117,8 +1251,7 @@
 		<div class="container">
 			<ul class="site-footer__primary-nav">
 				<li>
-					<a data-drupal-link-system-path="node/616">Privacy
-						Policy</a>
+					<a data-drupal-link-system-path="node/616">Privacy Policy</a>
 				</li>
 				<li>
 					<a data-drupal-link-system-path="node/611">Cookies</a>
@@ -1134,378 +1267,18 @@
 					<a role="button" class="social-list-open" href="javascript:void(0);" aria-haspopup="Social menu"
 						aria-label="Open social menu" aria-expanded="false" title="">
 						Connect</a>
-					<ul class="social-nav-list">
-						<li>
-							<span>
-								<a title="X" rel="noopener noreferrer" target="_blank">
-									X
-								</a>
-							</span>
-							<span>
-								<a title="Facebook" rel="noopener noreferrer" target="_blank">
-									Facebook
-								</a>
-							</span>
-							<span>
-								<a title="Instagram" rel="noopener noreferrer" target="_blank">
-									Instagram
-								</a>
-							</span>
-							<span>
-								<a title="LinkedIn" rel="noopener noreferrer" target="_blank">
-									LinkedIn
-								</a>
-							</span>
-						</li>
-					</ul>
 				</li>
 
 				<li>
-					<a title="" target="">
-						Sitemap</a>
+					<a title="" target=""> Sitemap</a>
 				</li>
 			</ul>
 			<div>
 			</div>
 		</div>
 	</footer>
-	<div class="feed-crm-pop_wrapper connect-crm-wrap">
-		<div class="feed-modal">
-			<div class="container container--s">
-				<div class="feed-modal__content-wrapper">
-					<article class="post">
-						<div class="post__header connect-pop-header">
-							<a role="button" href="javascript:void(0);" class="feed-post__close js-post-close"
-								aria-label="Close Subscribe" title="Close Subscribe">
-								<div class="post__close-button">
-									<svg id="close-icon" viewBox="0 0 14.6 14.6" width="100%" height="100%">
-										<path fill="none" stroke="currentColor" stroke-width=".8"
-											d="M.3.3l14 14m0-14l-14 14"></path>
-									</svg>
-								</div>
-							</a>
-						</div>
-						<h5 class="post__title ideas_title">no title</h5>
-						<h5 class="post__title static_title">Subscribe to stay up to date with our latest thinking</h5>
-						<div class="post__wrapper connect-form-wrapper">
-							<div class="post__meta-wrapper connect-pop-copy">
-								<p class="gated-content">You can download this content and subscribe to stay up to date
-									on how brands can make an impact in today’s fast-moving world by filling out the
-									information on this page. <br> <br> <strong> Pop-ups must be enabled in your browser
-										settings.</strong> </p>
-								<p class="nongated-content">David Ogilvy founded our company to be the teaching hospital
-									of advertising. We continue that legacy by providing unmatched insights into how
-									brands can make an impact in today's fast-moving world. Subscribe to receive our
-									latest thinking directly to your inbox.</p>
-								<p class="only-email-content">Please enter your email address to access this
-									content.<br> <br> <strong> Pop-ups must be enabled in your browser
-										settings.</strong></p>
-							</div>
-							<div class="post__text text">
-								<div class="connect-form">
-									<form class="content-entity-file-utility-add-form content-entity-file-utility-form"
-										data-drupal-selector="content-entity-file-utility-add-form"
-										action="https://www.ogilvy.com/" method="post"
-										id="content-entity-file-utility-add-form" accept-charset="UTF-8">
-										<div class="field--type-string field--name-field-name field--widget-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-name-wrapper" id="edit-field-name-wrapper">
-											<div
-												class="js-form-item form-item js-form-type-textfield form-item-field-name-0-value js-form-item-field-name-0-value">
-												<label for="edit-field-name-0-value"
-													class="js-form-required invisible form-required">Name</label>
-												<input class="js-text-full text-full form-text required"
-													data-drupal-selector="edit-field-name-0-value" type="text"
-													id="edit-field-name-0-value" name="field_name[0][value]" value=""
-													size="60" maxlength="255" placeholder="Full Name"
-													required="required" aria-required="true">
-												<div data-lastpass-icon-root=""
-													style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-													<template shadowrootmode="closed"><svg width="24" height="24"
-															viewBox="0 0 24 24" fill="none"
-															xmlns="http://www.w3.org/2000/svg" data-lastpass-icon="true"
-															style="position: absolute; cursor: pointer; height: 22px; max-height: 22px; width: 22px; max-width: 22px; top: 7px; left: 458.391px; z-index: auto; color: rgb(186, 192, 202);">
-															<rect x="0.680176" y="0.763062" width="22.6392"
-																height="22.4737" rx="4" fill="currentColor"></rect>
-															<path fill-rule="evenodd" clip-rule="evenodd"
-																d="M19.7935 7.9516C19.7935 7.64414 20.0427 7.3949 20.3502 7.3949C20.6576 7.3949 20.9069 7.64414 20.9069 7.9516V16.0487C20.9069 16.3562 20.6576 16.6054 20.3502 16.6054C20.0427 16.6054 19.7935 16.3562 19.7935 16.0487V7.9516Z"
-																fill="white"></path>
-															<path fill-rule="evenodd" clip-rule="evenodd"
-																d="M4.76288 13.6577C5.68525 13.6577 6.43298 12.9154 6.43298 11.9998C6.43298 11.0842 5.68525 10.3419 4.76288 10.3419C3.8405 10.3419 3.09277 11.0842 3.09277 11.9998C3.09277 12.9154 3.8405 13.6577 4.76288 13.6577Z"
-																fill="white"></path>
-															<path fill-rule="evenodd" clip-rule="evenodd"
-																d="M10.3298 13.6577C11.2521 13.6577 11.9999 12.9154 11.9999 11.9998C11.9999 11.0842 11.2521 10.3419 10.3298 10.3419C9.4074 10.3419 8.65967 11.0842 8.65967 11.9998C8.65967 12.9154 9.4074 13.6577 10.3298 13.6577Z"
-																fill="white"></path>
-															<path fill-rule="evenodd" clip-rule="evenodd"
-																d="M15.8964 13.6577C16.8188 13.6577 17.5665 12.9154 17.5665 11.9998C17.5665 11.0842 16.8188 10.3419 15.8964 10.3419C14.974 10.3419 14.2263 11.0842 14.2263 11.9998C14.2263 12.9154 14.974 13.6577 15.8964 13.6577Z"
-																fill="white"></path>
-														</svg></template>
-												</div>
-											</div>
-										</div>
-										<span class="field_name_error error"></span><input autocomplete="off"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="form-9xdqqlchk5nyzsctwxlmcxksfv-m0ra0ebtcjmt5p70"
-											type="hidden" name="form_build_id"
-											value="form-9XdQQlCHk5NYZSCTWXlMCXksfv-m0rA0EbTCjMt5P70">
-										<span class="form_build_id_error error"></span><input
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-content-entity-file-utility-add-form"
-											type="hidden" name="form_id" value="content_entity_file_utility_add_form">
-										<span class="form_id_error error"></span>
-										<div class="field--type-string field--name-field-title field--widget-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-title-wrapper"
-											id="edit-field-title-wrapper">
-											<div
-												class="js-form-item form-item js-form-type-textfield form-item-field-title-0-value js-form-item-field-title-0-value">
-												<label for="edit-field-title-0-value"
-													class="js-form-required invisible form-required"><a
-														class="subcategories" title="Job Title">Job Title <svg
-															id="plus-icon" viewBox="0 0 20.1 20.1" width="100%"
-															height="100%">
-															<path fill="none" stroke="currentColor"
-																d="M10.1 0v20.1m10-10H0"></path>
-														</svg></a></label>
-												<input class="js-text-full text-full form-text required"
-													data-drupal-selector="edit-field-title-0-value" type="text"
-													id="edit-field-title-0-value" name="field_title[0][value]" value=""
-													size="60" maxlength="255" placeholder="Job Title"
-													required="required" aria-required="true">
-											</div>
-										</div>
-										<span class="field_title_error error"></span>
-										<div class="field--type-string field--name-field-account-name field--widget-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-account-name-wrapper"
-											id="edit-field-account-name-wrapper">
-											<div
-												class="js-form-item form-item js-form-type-textfield form-item-field-account-name-0-value js-form-item-field-account-name-0-value">
-												<label for="edit-field-account-name-0-value"
-													class="js-form-required invisible form-required">Company
-													Name</label>
-												<input class="js-text-full text-full form-text required"
-													data-drupal-selector="edit-field-account-name-0-value" type="text"
-													id="edit-field-account-name-0-value"
-													name="field_account_name[0][value]" value="" size="60"
-													maxlength="255" placeholder="Company" required="required"
-													aria-required="true">
-											</div>
-										</div>
-										<span class="field_account_name_error error"></span>
-										<div class="field--type-entity-reference field--name-field-crm-industries field--widget-select2-entity-reference js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-crm-industries-wrapper"
-											id="edit-field-crm-industries-wrapper">
-											<div
-												class="js-form-item form-item js-form-type-select form-item-field-crm-industries js-form-item-field-crm-industries">
-												<label for="edit-field-crm-industries"
-													class="js-form-required invisible form-required">Industry</label>
-												<span class="select2 select2-container select2-container--default"
-													dir="ltr" data-select2-id="284" style="width: 100%;"><span
-														class="selection"><span
-															class="select2-selection select2-selection--single"
-															role="combobox" aria-haspopup="true" aria-expanded="false"
-															tabindex="0" aria-disabled="false"
-															aria-labelledby="select2-edit-field-crm-industries-container"><span
-																class="select2-selection__rendered"
-																id="select2-edit-field-crm-industries-container"
-																role="textbox" aria-readonly="true"><span
-																	class="select2-selection__placeholder">Industry</span></span><span
-																class="select2-selection__arrow" role="presentation"><b
-																	role="presentation"></b></span></span></span><span
-														class="dropdown-wrapper" aria-hidden="true"></span></span>
-												<div class="industrySuggestions"></div>
-											</div>
-										</div>
-										<span class="field_crm_industries_error error"></span>
 
-										<span class="field_country_c_error error"></span>
-										<div class="field--type-string field--name-email field--widget-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-email-wrapper" id="edit-email-wrapper">
-											<div
-												class="js-form-item form-item js-form-type-textfield form-item-email-0-value js-form-item-email-0-value">
-												<label for="edit-email-0-value"
-													class="js-form-required invisible form-required">Email</label>
-												<input class="js-text-full text-full form-text required"
-													data-drupal-selector="edit-email-0-value" type="text"
-													id="edit-email-0-value" name="email[0][value]" value="" size="60"
-													maxlength="255" placeholder="Email" required="required"
-													aria-required="true">
-											</div>
-										</div>
-										<span class="email_error error"></span>
-										<div class="field--type-string field--name-field-action-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-action-url-wrapper"
-											id="edit-field-action-url-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-action-url-0-value" type="hidden"
-												name="field_action_url[0][value]"
-												value="https://ogilvygroupsbox.sugarondemand.com/index.php?entryPoint=WebToLeadCapture">
-										</div>
-										<span class="field_action_url_error error"></span>
-										<div class="field--type-string field--name-field-source-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-source-c-wrapper"
-											id="edit-field-source-c-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-source-c-0-value" type="hidden"
-												name="field_source_c[0][value]" value="Web Site">
-										</div>
-										<span class="field_source_c_error error"></span>
-										<div class="field--type-string field--name-field-source-group-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-source-group-c-wrapper"
-											id="edit-field-source-group-c-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-source-group-c-0-value" type="hidden"
-												name="field_source_group_c[0][value]" value="Alt Media">
-										</div>
-										<span class="field_source_group_c_error error"></span>
-										<div class="field--type-string field--name-field-sourceitem-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-sourceitem-c-wrapper"
-											id="edit-field-sourceitem-c-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-sourceitem-c-0-value" type="hidden"
-												name="field_sourceitem_c[0][value]" value="TBD">
-										</div>
-										<span class="field_sourceitem_c_error error"></span>
-										<div class="field--type-string field--name-field-status field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-status-wrapper"
-											id="edit-field-status-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-status-0-value" type="hidden"
-												name="field_status[0][value]" value="New">
-										</div>
-										<span class="field_status_error error"></span>
-										<div class="field--type-string field--name-field-f-path field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-f-path-wrapper"
-											id="edit-field-f-path-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-f-path-0-value" type="hidden"
-												name="field_f_path[0][value]" value="">
-										</div>
-										<span class="field_f_path_error error"></span>
-										<div class="field--type-string field--name-field-customer field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-customer-wrapper"
-											id="edit-field-customer-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-customer-0-value" type="hidden"
-												name="field_customer[0][value]" value="ch000097311eArad">
-										</div>
-										<span class="field_customer_error error"></span>
-										<div class="field--type-string field--name-field-dialogid field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-dialogid-wrapper"
-											id="edit-field-dialogid-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-dialogid-0-value" type="hidden"
-												name="field_dialogid[0][value]" value="200">
-										</div>
-										<span class="field_dialogid_error error"></span>
-										<div class="field--type-string field--name-field-cke field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-cke-wrapper" id="edit-field-cke-wrapper">
-											<input class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-cke-0-value" type="hidden"
-												name="field_cke[0][value]" value="1">
-										</div>
-										<span class="field_cke_error error"></span>
-										<div class="field--type-string field--name-field-assigned-user-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-assigned-user-id-wrapper"
-											id="edit-field-assigned-user-id-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-assigned-user-id-0-value" type="hidden"
-												name="field_assigned_user_id[0][value]" value="1">
-										</div>
-										<span class="field_assigned_user_id_error error"></span>
-										<div class="field--type-string field--name-field-campaign-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-campaign-id-wrapper"
-											id="edit-field-campaign-id-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-campaign-id-0-value" type="hidden"
-												name="field_campaign_id[0][value]"
-												value="0b20b7a8-5089-11e9-a3ae-022cc35525d8">
-										</div>
-										<span class="field_campaign_id_error error"></span>
-										<div class="field--type-string field--name-field-hidden-submit-from-website field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-hidden-submit-from-website-wrapper"
-											id="edit-field-hidden-submit-from-website-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-hidden-submit-from-website-0-value"
-												type="hidden" name="field_hidden_submit_from_website[0][value]"
-												value="WebToLead">
-										</div>
-										<span class="field_hidden_submit_from_website_error error"></span>
-										<div class="field--type-string field--name-field-redirect-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-redirect-url-wrapper"
-											id="edit-field-redirect-url-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-redirect-url-0-value" type="hidden"
-												name="field_redirect_url[0][value]" value="https://www.ogilvy.com">
-										</div>
-										<span class="field_redirect_url_error error"></span>
-										<div class="field--type-string field--name-field-team-set-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-team-set-id-wrapper"
-											id="edit-field-team-set-id-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-team-set-id-0-value" type="hidden"
-												name="field_team_set_id[0][value]" value="1">
-										</div>
-										<span class="field_team_set_id_error error"></span>
-										<div class="field--type-string field--name-field-footer-connect-action-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper"
-											data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-field-footer-connect-action-url-wrapper"
-											id="edit-field-footer-connect-action-url-wrapper"> <input
-												class="js-text-full text-full field-hidden-string"
-												data-drupal-selector="edit-field-footer-connect-action-url-0-value"
-												type="hidden" name="field_footer_connect_action_url[0][value]"
-												value="https://crmemails.ogilvy.com/api/forms/submit">
-										</div>
-										<span class="field_footer_connect_action_url_error error"></span>
-										<div data-twig-suggestion="content-entity-file-utility-add-form"
-											data-drupal-selector="edit-actions"
-											class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2">
-											<input class="use-ajax button js-form-submit form-submit"
-												data-drupal-selector="edit-send" type="submit" id="edit-send" name="op"
-												value="Submit" data-once="drupal-ajax ajax">
-										</div>
-										<span class="actions_error error"></span>
-										<div class="url-textfield js-form-wrapper form-wrapper"
-											style="display: none !important;">
-											<div
-												class="js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
-												<label for="edit-url">Leave this field blank</label>
-												<input autocomplete="off"
-													data-twig-suggestion="content-entity-file-utility-add-form"
-													data-drupal-selector="edit-url" type="text" id="edit-url" name="url"
-													value="" size="20" maxlength="128" class="form-text">
-											</div>
-										</div>
-										<div class="error-message error"></div>
-										<div class="privacy-policy connect-legal-privacyPolicy">Please read our <a
-												target="_blank" href="https://www.ogilvy.com/privacy-policy">Privacy
-												Policy</a> to see how we use your personal information.</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="feed-crm-pop_wrapper-new connect-crm-wrap-new">
 		<div class="feed-modal-new">
 			<div class="container container--s">
@@ -1769,7 +1542,8 @@
 		</div>
 	</div>
 	<script type="application/json"
-		data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8436","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany.front,better_exposed_filters\/auto_submit,better_exposed_filters\/general,better_exposed_filters\/select_all_none,blazy\/bio.ajax,core\/internal.jquery.form,core\/picturefill,eu_cookie_compliance\/eu_cookie_compliance_default,field_hidden\/drupal.field_hidden,file_utility\/file_utility_js,formtips\/formtips,formtips\/hoverintent,layout_discovery\/onecol,ogilvy\/careers-styling,ogilvy\/custom-styling,ogilvy\/splash-styling,ogilvy_geo_cookie\/ogilvy_geo_cookie,select2\/select2,select2\/select2.i18n.en,select2_publish\/select2.publish,system\/base,views\/views.ajax,views\/views.module,views_ajax_get\/ajax_get","theme":"ogilvy","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/home?ajax_form=1":true,"\/home":true},"errorcode":"0","dialogid_region_crm":"616","dialogid_footer_crm":"617","dialogid_idea_crm":"615","dialogid_idea_email_crm":"739","current_alias_path":"\/Admin\/p10","ajax":{"edit-send":{"callback":[{"mailManager":{}},"submitUserInfoFormAjax"],"event":"click","url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}},"edit-send--2":{"callback":"::submitContactUsFormAjax","event":"click","wrapper":"connect-form-wrapper","url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}}},"formtips":{"selectors":[""],"interval":500,"sensitivity":3,"timeout":1000,"max_width":"500px","trigger_action":"hover"},"open_model_file":0,"file_force_download":1,"allowed_content_types":"ideas|feeds","allowed_file_extensions":"pdf","geo_cookie_lifetime":30,"geo_cookie_fc_default":{"af":1,"ax":1,"al":1,"dz":1,"as":1,"ad":1,"ao":1,"ai":1,"ag":1,"ar":1,"am":1,"aw":1,"au":1,"at":1,"az":1,"bs":1,"bh":1,"bd":1,"bb":1,"by":1,"be":1,"bz":1,"bj":1,"bm":1,"bt":1,"bo":1,"bq":1,"ba":1,"bw":1,"bv":1,"br":1,"io":1,"bn":1,"bg":1,"bf":1,"bi":1,"cv":1,"kh":1,"cm":1,"ca":1,"ky":1,"cf":1,"td":1,"cl":1,"cx":1,"cc":1,"co":1,"km":1,"cd":1,"cg":1,"ck":1,"cr":1,"hr":1,"cu":1,"cw":1,"cy":1,"cz":1,"dk":1,"dj":1,"dm":1,"do":1,"ec":1,"eg":1,"sv":1,"gq":1,"er":1,"ee":1,"sz":1,"et":1,"fk":1,"fo":1,"fj":1,"fi":1,"fr":1,"gf":1,"pf":1,"tf":1,"ga":1,"gm":1,"ge":1,"de":1,"gh":1,"gi":1,"hk":1,"cn":1,"tw":1,"gr":1,"gl":1,"gd":1,"gp":1,"gu":1,"gt":1,"gg":1,"gn":1,"gw":1,"gy":1,"ht":1,"hm":1,"va":1,"hn":1,"hu":1,"is":1,"in":1,"id":1,"ir":1,"iq":1,"ie":1,"im":1,"il":1,"it":1,"jm":1,"jp":1,"je":1,"jo":1,"kz":1,"ke":1,"ki":1,"kw":1,"kg":1,"la":1,"lv":1,"lb":1,"ls":1,"lr":1,"ly":1,"li":1,"lt":1,"lu":1,"mo":1,"mg":1,"mw":1,"my":1,"mv":1,"ml":1,"mt":1,"mh":1,"mq":1,"mr":1,"mu":1,"yt":1,"mx":1,"fm":1,"md":1,"mc":1,"mn":1,"me":1,"ms":1,"ma":1,"mz":1,"mm":1,"na":1,"nr":1,"np":1,"nl":1,"nc":1,"nz":1,"ni":1,"ne":1,"ng":1,"nu":1,"nf":1,"mk":1,"mp":1,"no":1,"om":1,"pk":1,"pw":1,"ps":1,"pa":1,"pg":1,"py":1,"pe":1,"ph":1,"pn":1,"pl":1,"pt":1,"pr":1,"qa":1,"ro":1,"ru":1,"rw":1,"re":1,"bl":1,"sh":1,"kn":1,"lc":1,"mf":1,"vc":1,"ws":1,"sm":1,"st":1,"sa":1,"sn":1,"rs":1,"sc":1,"sl":1,"sg":1,"sx":1,"sk":1,"si":1,"sb":1,"so":1,"za":1,"gs":1,"kr":1,"ss":1,"es":1,"lk":1,"sd":1,"sr":1,"sj":1,"se":1,"ch":1,"sy":1,"tj":1,"tz":1,"th":1,"tl":1,"tg":1,"tk":1,"to":1,"tt":1,"tn":1,"tr":1,"tm":1,"tc":1,"tv":1,"ug":1,"ua":1,"ae":1,"gb":1,"us":1,"um":1,"uy":1,"uz":1,"vu":1,"ve":1,"vn":1,"vg":1,"vi":1,"wf":1,"eh":1,"ye":1,"zm":1,"zw":1},"geo_cookie_pc_default":{"af":1,"ax":1,"al":0,"dz":1,"as":1,"ad":0,"ao":1,"ai":1,"ag":1,"ar":1,"am":0,"aw":1,"au":1,"at":0,"az":0,"bs":1,"bh":0,"bd":1,"bb":1,"by":0,"be":0,"bz":1,"bj":1,"bm":1,"bt":1,"bo":1,"bq":1,"ba":0,"bw":1,"bv":1,"br":1,"io":1,"bn":1,"bg":0,"bf":1,"bi":1,"cv":1,"kh":1,"cm":1,"ca":1,"ky":1,"cf":1,"td":1,"cl":1,"cx":1,"cc":1,"co":1,"km":1,"cd":1,"cg":1,"ck":1,"cr":1,"hr":0,"cu":1,"cw":1,"cy":0,"cz":0,"dk":0,"dj":1,"dm":1,"do":1,"ec":1,"eg":1,"sv":1,"gq":1,"er":1,"ee":0,"sz":1,"et":1,"fk":1,"fo":1,"fj":1,"fi":0,"fr":0,"gf":1,"pf":1,"tf":1,"ga":1,"gm":1,"ge":0,"de":0,"gh":1,"gi":1,"hk":1,"cn":1,"tw":1,"gr":0,"gl":1,"gd":1,"gp":1,"gu":1,"gt":1,"gg":1,"gn":1,"gw":1,"gy":1,"ht":1,"hm":1,"va":1,"hn":1,"hu":0,"is":0,"in":1,"id":1,"ir":1,"iq":1,"ie":0,"im":1,"il":1,"it":0,"jm":1,"jp":1,"je":1,"jo":1,"kz":1,"ke":1,"ki":1,"kw":1,"kg":1,"la":1,"lv":0,"lb":1,"ls":1,"lr":1,"ly":1,"li":0,"lt":0,"lu":0,"mo":1,"mg":1,"mw":1,"my":1,"mv":1,"ml":1,"mt":0,"mh":1,"mq":1,"mr":1,"mu":1,"yt":1,"mx":1,"fm":1,"md":0,"mc":0,"mn":1,"me":0,"ms":1,"ma":1,"mz":1,"mm":1,"na":1,"nr":1,"np":1,"nl":0,"nc":1,"nz":1,"ni":1,"ne":1,"ng":1,"nu":1,"nf":1,"mk":0,"mp":1,"no":0,"om":1,"pk":1,"pw":1,"ps":1,"pa":1,"pg":1,"py":1,"pe":1,"ph":1,"pn":1,"pl":0,"pt":0,"pr":1,"qa":1,"ro":0,"ru":0,"rw":1,"re":1,"bl":1,"sh":1,"kn":1,"lc":1,"mf":1,"vc":1,"ws":1,"sm":0,"st":1,"sa":1,"sn":1,"rs":0,"sc":1,"sl":1,"sg":1,"sx":1,"sk":0,"si":0,"sb":1,"so":1,"za":1,"gs":1,"kr":1,"ss":1,"es":0,"lk":1,"sd":1,"sr":1,"sj":1,"se":0,"ch":0,"sy":1,"tj":1,"tz":1,"th":1,"tl":1,"tg":1,"tk":1,"to":1,"tt":1,"tn":1,"tr":0,"tm":1,"tc":1,"tv":1,"ug":1,"ua":0,"ae":1,"gb":0,"us":1,"um":1,"uy":1,"uz":1,"vu":1,"ve":1,"vn":1,"vg":1,"vi":1,"wf":1,"eh":1,"ye":1,"zm":1,"zw":1},"geo_website_urls":{"af":"","ax":"","al":"https:\/\/ogilvy.al\/","dz":"","as":"","ad":"","ao":"","ai":"","ag":"","ar":"https:\/\/www.ogilvy.com\/ar\/","am":"","aw":"","au":"https:\/\/www.ogilvy.com.au\/","at":"https:\/\/ogilvy.at\/","az":"","bs":"","bh":"https:\/\/www.memacogilvy.com\/","bd":"","bb":"","by":"","be":"https:\/\/ogilvy-sociallab.be\/","bz":"","bj":"","bm":"","bt":"","bo":"https:\/\/ogilvy.com.bo\/","bq":"","ba":"","bw":"","bv":"","br":"http:\/\/www.ogilvy.com.br\/","io":"","bn":"","bg":"","bf":"","bi":"","cv":"","kh":"","cm":"","ca":"https:\/\/www.ogilvy.com\/ca\/","ky":"","cf":"","td":"","cl":"https:\/\/www.ogilvy.com\/ar\/","cx":"","cc":"","co":"","km":"","cd":"","cg":"","ck":"","cr":"","hr":"","cu":"","cw":"","cy":"","cz":"https:\/\/www.ogilvy.cz\/en\/","dk":"https:\/\/www.ogilvy.dk\/","dj":"","dm":"","do":"https:\/\/ogilvyrd.com\/","ec":"","eg":"https:\/\/www.memacogilvy.com\/","sv":"","gq":"","er":"","ee":"","sz":"","et":"","fk":"","fo":"","fj":"","fi":"","fr":"https:\/\/www.ogilvy.com\/fr\/fre","gf":"","pf":"","tf":"","ga":"","gm":"","ge":"","de":"https:\/\/www.ogilvy.com\/de\/","gh":"","gi":"","hk":"","cn":"https:\/\/www.ogilvy.com\/cn\/","tw":"https:\/\/www.ogilvy.com\/tw\/","gr":"https:\/\/ogilvy.gr\/","gl":"","gd":"","gp":"","gu":"","gt":"https:\/\/ogilvyguatemala.com\/","gg":"","gn":"","gw":"","gy":"","ht":"","hm":"","va":"","hn":"","hu":"http:\/\/ogilvy.hu\/","is":"","in":"http:\/\/www.ogilvyindia.com\/","id":"","ir":"","iq":"","ie":"https:\/\/www.ogilvy.ie","im":"","il":"","it":"https:\/\/www.ogilvy.com\/it\/","jm":"","jp":"https:\/\/www.ogilvy.co.jp","je":"","jo":"https:\/\/www.memacogilvy.com\/","kz":"","ke":"https:\/\/ogilvy.africa\/","ki":"","kw":"https:\/\/www.memacogilvy.com\/","kg":"","la":"","lv":"https:\/\/www.ogilvypr.lv\/","lb":"https:\/\/www.memacogilvy.com\/","ls":"","lr":"","ly":"","li":"","lt":"https:\/\/www.ogilvy.lt\/","lu":"","mo":"","mg":"","mw":"","my":"","mv":"","ml":"","mt":"","mh":"","mq":"","mr":"","mu":"","yt":"","mx":"https:\/\/www.ogilvy.com.mx\/","fm":"","md":"","mc":"","mn":"","me":"","ms":"","ma":"","mz":"","mm":"","na":"http:\/\/www.ogilvy.com.na\/","nr":"","np":"","nl":"https:\/\/www.ogilvy.nl\/","nc":"","nz":"","ni":"https:\/\/ogilvy.com.ni\/","ne":"","ng":"","nu":"","nf":"","mk":"","mp":"","no":"","om":"","pk":"","pw":"","ps":"","pa":"http:\/\/www.p4ogilvy.com\/","pg":"","py":"","pe":"","ph":"","pn":"","pl":"https:\/\/www.ogilvy.pl\/pl\/strona-glowna\/","pt":"https:\/\/barogilvy.pt\/","pr":"","qa":"https:\/\/www.memacogilvy.com\/","ro":"","ru":"http:\/\/www.ogilvyrussia.ru\/","rw":"http:\/\/www.ogilvyrussia.ru\/","re":"","bl":"","sh":"","kn":"","lc":"","mf":"","vc":"","ws":"","sm":"","st":"","sa":"https:\/\/www.memacogilvy.com\/","sn":"","rs":"https:\/\/fullhouseogilvy.rs\/","sc":"","sl":"","sg":"https:\/\/ogilvy.sg\/","sx":"","sk":"","si":"","sb":"","so":"","za":"https:\/\/www.ogilvy.co.za\/","gs":"","kr":"http:\/\/www.ogilvy.co.kr\/kr","ss":"","es":"https:\/\/www.ogilvy.com\/es\/","lk":"http:\/\/ogilvy.lk\/","sd":"","sr":"","sj":"","se":"","ch":"https:\/\/www.ogilvy.ch\/","sy":"","tj":"","tz":"","th":"","tl":"","tg":"","tk":"","to":"","tt":"http:\/\/www.ogilvycaribbean.com\/","tn":"https:\/\/www.memacogilvy.com\/","tr":"https:\/\/www.ogilvy.com.tr\/","tm":"","tc":"","tv":"","ug":"","ua":"","ae":"https:\/\/www.ogilvy.com\/ae\/","gb":"https:\/\/www.ogilvy.com\/uk\/","us":"https:\/\/www.ogilvy.com\/","um":"","uy":"https:\/\/www.puntoogilvy.com.uy\/","uz":"","vu":"","ve":"","vn":"","vg":"","vi":"","wf":"","eh":"","ye":"","zm":"","zw":""},"default_cookies_for_others":1,"base_url":"https:\/\/www.ogilvy.com","geo_redirection_disable_option":1,"bots_list_to_disable_geo_redirection":"Googlebot|Googlebot-News|Googlebot-Image|Googlebot-Video|Mediapartners-Google|AdsBot-Google|AdsBot-Google-Mobile-Apps|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|Exabot|Facebot|facebookexternalhit|ia_archiver|Chrome-Lighthouse|GTmetrix|PTST","eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--categories\u0022\u003E\n\t\u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookies__policy\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022container\u0022\u003E\n\t\t\t\t\u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookies-wrp-new\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\u003Cp\u003E\u003Cspan\u003EOur use of cookies\u003C\/span\u003E\u003C\/p\u003E\u003Cp\u003EOgilvy.com uses cookies, some are necessary for the operation of the website and some are designed to improve your experience. For more information, \u003Ca href=\u0022\/cookies\u0022 target=\u0022_blank\u0022\u003Eclick here.\u003C\/a\u003E\u003C\/p\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-nc\u0022\u003ENecessary cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAre essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_active-border\u0022 target=\u0022nc\u0022 id=\u0022nc-popup-id\u0022 style=\u0022display:none;\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-nc\u0022 aria-labelledby =\u0022cookie-category-nc\u0022 value=\u0022nc\u0022  checked disabled \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-fc\u0022\u003EFunctional cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAllow Ogilvy.com to remember choices you make to give you better functionality and personal features.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022fc\u0022 id=\u0022fc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-fc\u0022 aria-labelledby =\u0022cookie-category-fc\u0022 value=\u0022fc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-pc\u0022\u003EPerformance cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHelp improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022pc\u0022 id=\u0022pc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-pc\u0022 aria-labelledby =\u0022cookie-category-pc\u0022 value=\u0022pc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons eu-cookie-compliance-has-categories\u0022\u003E\n\t\t\t\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022cookies__close agree-button\u0022 aria-labelledby=\u0022popup-buttons\u0022\u003E\n\t\t\t\t\t\t\t\u003Csvg id=\u0022close-icon\u0022 viewBox=\u00220 0 14.6 14.6\u0022 width=\u0022100%\u0022 height=\u0022100%\u0022\u003E\n\t\t\t\t\t\t\t\t\u003Cpath fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00221\u0022 d=\u0022M.3.3l14 14m0-14l-14 14\u0022\u003E\u003C\/path\u003E\n\t\t\t\t\t\t\t\u003C\/svg\u003E\n\t\t\t\t\t\t\u003C\/button\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--categories\u0022\u003E\n\t\u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookies__policy\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022container\u0022\u003E\n\t\t\t\t\u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookies-wrp-new\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\n\t\t\t\t\t\u003C\/div\u003E\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-nc\u0022\u003ENecessary cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAre essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_active-border\u0022 target=\u0022nc\u0022 id=\u0022nc-popup-id\u0022 style=\u0022display:none;\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-nc\u0022 aria-labelledby =\u0022cookie-category-nc\u0022 value=\u0022nc\u0022  checked disabled \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-fc\u0022\u003EFunctional cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAllow Ogilvy.com to remember choices you make to give you better functionality and personal features.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022fc\u0022 id=\u0022fc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-fc\u0022 aria-labelledby =\u0022cookie-category-fc\u0022 value=\u0022fc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-pc\u0022\u003EPerformance cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHelp improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022pc\u0022 id=\u0022pc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-pc\u0022 aria-labelledby =\u0022cookie-category-pc\u0022 value=\u0022pc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons eu-cookie-compliance-has-categories\u0022\u003E\n\t\t\t\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022cookies__close agree-button\u0022 aria-labelledby=\u0022popup-buttons\u0022\u003E\n\t\t\t\t\t\t\t\u003Csvg id=\u0022close-icon\u0022 viewBox=\u00220 0 14.6 14.6\u0022 width=\u0022100%\u0022 height=\u0022100%\u0022\u003E\n\t\t\t\t\t\t\t\t\u003Cpath fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00221\u0022 d=\u0022M.3.3l14 14m0-14l-14 14\u0022\u003E\u003C\/path\u003E\n\t\t\t\t\t\t\t\u003C\/svg\u003E\n\t\t\t\t\t\t\u003C\/button\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/node\/116","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":true,"domain":"","domain_all_sites":false,"popup_eu_only":false,"popup_eu_only_js":false,"cookie_lifetime":30,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"categories","automatic_cookies_removal":true,"allowed_cookies":"is_form_submited\r\nis_first_visit\r\ncookie_agreed_countries","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button \u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":["nc","fc","pc"],"cookie_categories_details":{"nc":{"uuid":"f4c074b5-41e2-4efe-aaf9-abead1265620","langcode":"en","status":true,"dependencies":[],"id":"nc","label":"Necessary cookies","description":"Are essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.","checkbox_default_state":"required","weight":0},"fc":{"uuid":"2b4b71a8-28d7-43f3-9778-97ee121f7ebf","langcode":"en","status":true,"dependencies":[],"id":"fc","label":"Functional cookies","description":"Allow Ogilvy.com to remember choices you make to give you better functionality and personal features.","checkbox_default_state":"unchecked","weight":1},"pc":{"uuid":"6bb0111c-9ec2-4d3f-a6db-a11b6ccce350","langcode":"en","status":true,"dependencies":[],"id":"pc","label":"Performance cookies","description":"Help improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.","checkbox_default_state":"unchecked","weight":2}},"enable_save_preferences_button":false,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"olivero_primary_button_classes":"","olivero_secondary_button_classes":"","close_button_action":"close_banner","open_by_default":true,"modules_allow_popup":true,"hide_the_banner":false,"geoip_match":true},"node_alias_path":"\/home","node_id":"published","viewsAjaxGet":{"our_work_grid":"our_work_grid"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:40959eb3d9255910c06b4118c4ec59ab8f338e16bfec5ac769a5d6e80d5ed9fe":{"view_name":"our_work_grid","view_display_id":"our_work_grid","view_args":"","view_path":"\/node\/8436","view_base_path":null,"view_dom_id":"40959eb3d9255910c06b4118c4ec59ab8f338e16bfec5ac769a5d6e80d5ed9fe","pager_element":0},"views_dom_id:14618b6de62fb992b1385a7681497b489293809d7d777f18b111b3137998db3a":{"view_name":"splash_image_list","view_display_id":"splash_image","view_args":"","view_path":"\/node\/8436","view_base_path":null,"view_dom_id":"14618b6de62fb992b1385a7681497b489293809d7d777f18b111b3137998db3a","pager_element":0}}},"user":{"uid":0,"permissionsHash":"c8d5c78d200a922a6bdbcf2fe549ab819cf7876b8097f4150766134de270e5bf"}}</script>
+		data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8436","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany.front,better_exposed_filters\/auto_submit,better_exposed_filters\/general,better_exposed_filters\/select_all_none,blazy\/bio.ajax,core\/internal.jquery.form,core\/picturefill,eu_cookie_compliance\/eu_cookie_compliance_default,field_hidden\/drupal.field_hidden,file_utility\/file_utility_js,formtips\/formtips,formtips\/hoverintent,layout_discovery\/onecol,ogilvy\/careers-styling,ogilvy\/custom-styling,ogilvy\/splash-styling,ogilvy_geo_cookie\/ogilvy_geo_cookie,select2\/select2,select2\/select2.i18n.en,select2_publish\/select2.publish,system\/base,views\/views.ajax,views\/views.module,views_ajax_get\/ajax_get","theme":"ogilvy","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/home?ajax_form=1":true,"\/home":true},"errorcode":"0","dialogid_region_crm":"616","dialogid_footer_crm":"617","dialogid_idea_crm":"615","dialogid_idea_email_crm":"739","current_alias_path":"\/Admin\/p10","ajax":{"edit-send":{"callback":[{"mailManager":{}},"submitUserInfoFormAjax"],"event":"click","url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}},"edit-send--2":{"callback":"::submitContactUsFormAjax","event":"click","wrapper":"connect-form-wrapper","url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}}},"formtips":{"selectors":[""],"interval":500,"sensitivity":3,"timeout":1000,"max_width":"500px","trigger_action":"hover"},"open_model_file":0,"file_force_download":1,"allowed_content_types":"ideas|feeds","allowed_file_extensions":"pdf","geo_cookie_lifetime":30,"geo_cookie_fc_default":{"af":1,"ax":1,"al":1,"dz":1,"as":1,"ad":1,"ao":1,"ai":1,"ag":1,"ar":1,"am":1,"aw":1,"au":1,"at":1,"az":1,"bs":1,"bh":1,"bd":1,"bb":1,"by":1,"be":1,"bz":1,"bj":1,"bm":1,"bt":1,"bo":1,"bq":1,"ba":1,"bw":1,"bv":1,"br":1,"io":1,"bn":1,"bg":1,"bf":1,"bi":1,"cv":1,"kh":1,"cm":1,"ca":1,"ky":1,"cf":1,"td":1,"cl":1,"cx":1,"cc":1,"co":1,"km":1,"cd":1,"cg":1,"ck":1,"cr":1,"hr":1,"cu":1,"cw":1,"cy":1,"cz":1,"dk":1,"dj":1,"dm":1,"do":1,"ec":1,"eg":1,"sv":1,"gq":1,"er":1,"ee":1,"sz":1,"et":1,"fk":1,"fo":1,"fj":1,"fi":1,"fr":1,"gf":1,"pf":1,"tf":1,"ga":1,"gm":1,"ge":1,"de":1,"gh":1,"gi":1,"hk":1,"cn":1,"tw":1,"gr":1,"gl":1,"gd":1,"gp":1,"gu":1,"gt":1,"gg":1,"gn":1,"gw":1,"gy":1,"ht":1,"hm":1,"va":1,"hn":1,"hu":1,"is":1,"in":1,"id":1,"ir":1,"iq":1,"ie":1,"im":1,"il":1,"it":1,"jm":1,"jp":1,"je":1,"jo":1,"kz":1,"ke":1,"ki":1,"kw":1,"kg":1,"la":1,"lv":1,"lb":1,"ls":1,"lr":1,"ly":1,"li":1,"lt":1,"lu":1,"mo":1,"mg":1,"mw":1,"my":1,"mv":1,"ml":1,"mt":1,"mh":1,"mq":1,"mr":1,"mu":1,"yt":1,"mx":1,"fm":1,"md":1,"mc":1,"mn":1,"me":1,"ms":1,"ma":1,"mz":1,"mm":1,"na":1,"nr":1,"np":1,"nl":1,"nc":1,"nz":1,"ni":1,"ne":1,"ng":1,"nu":1,"nf":1,"mk":1,"mp":1,"no":1,"om":1,"pk":1,"pw":1,"ps":1,"pa":1,"pg":1,"py":1,"pe":1,"ph":1,"pn":1,"pl":1,"pt":1,"pr":1,"qa":1,"ro":1,"ru":1,"rw":1,"re":1,"bl":1,"sh":1,"kn":1,"lc":1,"mf":1,"vc":1,"ws":1,"sm":1,"st":1,"sa":1,"sn":1,"rs":1,"sc":1,"sl":1,"sg":1,"sx":1,"sk":1,"si":1,"sb":1,"so":1,"za":1,"gs":1,"kr":1,"ss":1,"es":1,"lk":1,"sd":1,"sr":1,"sj":1,"se":1,"ch":1,"sy":1,"tj":1,"tz":1,"th":1,"tl":1,"tg":1,"tk":1,"to":1,"tt":1,"tn":1,"tr":1,"tm":1,"tc":1,"tv":1,"ug":1,"ua":1,"ae":1,"gb":1,"us":1,"um":1,"uy":1,"uz":1,"vu":1,"ve":1,"vn":1,"vg":1,"vi":1,"wf":1,"eh":1,"ye":1,"zm":1,"zw":1},"geo_cookie_pc_default":{"af":1,"ax":1,"al":0,"dz":1,"as":1,"ad":0,"ao":1,"ai":1,"ag":1,"ar":1,"am":0,"aw":1,"au":1,"at":0,"az":0,"bs":1,"bh":0,"bd":1,"bb":1,"by":0,"be":0,"bz":1,"bj":1,"bm":1,"bt":1,"bo":1,"bq":1,"ba":0,"bw":1,"bv":1,"br":1,"io":1,"bn":1,"bg":0,"bf":1,"bi":1,"cv":1,"kh":1,"cm":1,"ca":1,"ky":1,"cf":1,"td":1,"cl":1,"cx":1,"cc":1,"co":1,"km":1,"cd":1,"cg":1,"ck":1,"cr":1,"hr":0,"cu":1,"cw":1,"cy":0,"cz":0,"dk":0,"dj":1,"dm":1,"do":1,"ec":1,"eg":1,"sv":1,"gq":1,"er":1,"ee":0,"sz":1,"et":1,"fk":1,"fo":1,"fj":1,"fi":0,"fr":0,"gf":1,"pf":1,"tf":1,"ga":1,"gm":1,"ge":0,"de":0,"gh":1,"gi":1,"hk":1,"cn":1,"tw":1,"gr":0,"gl":1,"gd":1,"gp":1,"gu":1,"gt":1,"gg":1,"gn":1,"gw":1,"gy":1,"ht":1,"hm":1,"va":1,"hn":1,"hu":0,"is":0,"in":1,"id":1,"ir":1,"iq":1,"ie":0,"im":1,"il":1,"it":0,"jm":1,"jp":1,"je":1,"jo":1,"kz":1,"ke":1,"ki":1,"kw":1,"kg":1,"la":1,"lv":0,"lb":1,"ls":1,"lr":1,"ly":1,"li":0,"lt":0,"lu":0,"mo":1,"mg":1,"mw":1,"my":1,"mv":1,"ml":1,"mt":0,"mh":1,"mq":1,"mr":1,"mu":1,"yt":1,"mx":1,"fm":1,"md":0,"mc":0,"mn":1,"me":0,"ms":1,"ma":1,"mz":1,"mm":1,"na":1,"nr":1,"np":1,"nl":0,"nc":1,"nz":1,"ni":1,"ne":1,"ng":1,"nu":1,"nf":1,"mk":0,"mp":1,"no":0,"om":1,"pk":1,"pw":1,"ps":1,"pa":1,"pg":1,"py":1,"pe":1,"ph":1,"pn":1,"pl":0,"pt":0,"pr":1,"qa":1,"ro":0,"ru":0,"rw":1,"re":1,"bl":1,"sh":1,"kn":1,"lc":1,"mf":1,"vc":1,"ws":1,"sm":0,"st":1,"sa":1,"sn":1,"rs":0,"sc":1,"sl":1,"sg":1,"sx":1,"sk":0,"si":0,"sb":1,"so":1,"za":1,"gs":1,"kr":1,"ss":1,"es":0,"lk":1,"sd":1,"sr":1,"sj":1,"se":0,"ch":0,"sy":1,"tj":1,"tz":1,"th":1,"tl":1,"tg":1,"tk":1,"to":1,"tt":1,"tn":1,"tr":0,"tm":1,"tc":1,"tv":1,"ug":1,"ua":0,"ae":1,"gb":0,"us":1,"um":1,"uy":1,"uz":1,"vu":1,"ve":1,"vn":1,"vg":1,"vi":1,"wf":1,"eh":1,"ye":1,"zm":1,"zw":1},"geo_website_urls":{"af":"","ax":"","al":"https:\/\/ogilvy.al\/","dz":"","as":"","ad":"","ao":"","ai":"","ag":"","ar":"https:\/\/www.ogilvy.com\/ar\/","am":"","aw":"","au":"https:\/\/www.ogilvy.com.au\/","at":"https:\/\/ogilvy.at\/","az":"","bs":"","bh":"https:\/\/www.memacogilvy.com\/","bd":"","bb":"","by":"","be":"https:\/\/ogilvy-sociallab.be\/","bz":"","bj":"","bm":"","bt":"","bo":"https:\/\/ogilvy.com.bo\/","bq":"","ba":"","bw":"","bv":"","br":"http:\/\/www.ogilvy.com.br\/","io":"","bn":"","bg":"","bf":"","bi":"","cv":"","kh":"","cm":"","ca":"https:\/\/www.ogilvy.com\/ca\/","ky":"","cf":"","td":"","cl":"https:\/\/www.ogilvy.com\/ar\/","cx":"","cc":"","co":"","km":"","cd":"","cg":"","ck":"","cr":"","hr":"","cu":"","cw":"","cy":"","cz":"https:\/\/www.ogilvy.cz\/en\/","dk":"https:\/\/www.ogilvy.dk\/","dj":"","dm":"","do":"https:\/\/ogilvyrd.com\/","ec":"","eg":"https:\/\/www.memacogilvy.com\/","sv":"","gq":"","er":"","ee":"","sz":"","et":"","fk":"","fo":"","fj":"","fi":"","fr":"https:\/\/www.ogilvy.com\/fr\/fre","gf":"","pf":"","tf":"","ga":"","gm":"","ge":"","de":"https:\/\/www.ogilvy.com\/de\/","gh":"","gi":"","hk":"","cn":"https:\/\/www.ogilvy.com\/cn\/","tw":"https:\/\/www.ogilvy.com\/tw\/","gr":"https:\/\/ogilvy.gr\/","gl":"","gd":"","gp":"","gu":"","gt":"https:\/\/ogilvyguatemala.com\/","gg":"","gn":"","gw":"","gy":"","ht":"","hm":"","va":"","hn":"","hu":"http:\/\/ogilvy.hu\/","is":"","in":"http:\/\/www.ogilvyindia.com\/","id":"","ir":"","iq":"","ie":"https:\/\/www.ogilvy.ie","im":"","il":"","it":"https:\/\/www.ogilvy.com\/it\/","jm":"","jp":"https:\/\/www.ogilvy.co.jp","je":"","jo":"https:\/\/www.memacogilvy.com\/","kz":"","ke":"https:\/\/ogilvy.africa\/","ki":"","kw":"https:\/\/www.memacogilvy.com\/","kg":"","la":"","lv":"https:\/\/www.ogilvypr.lv\/","lb":"https:\/\/www.memacogilvy.com\/","ls":"","lr":"","ly":"","li":"","lt":"https:\/\/www.ogilvy.lt\/","lu":"","mo":"","mg":"","mw":"","my":"","mv":"","ml":"","mt":"","mh":"","mq":"","mr":"","mu":"","yt":"","mx":"https:\/\/www.ogilvy.com.mx\/","fm":"","md":"","mc":"","mn":"","me":"","ms":"","ma":"","mz":"","mm":"","na":"http:\/\/www.ogilvy.com.na\/","nr":"","np":"","nl":"https:\/\/www.ogilvy.nl\/","nc":"","nz":"","ni":"https:\/\/ogilvy.com.ni\/","ne":"","ng":"","nu":"","nf":"","mk":"","mp":"","no":"","om":"","pk":"","pw":"","ps":"","pa":"http:\/\/www.p4ogilvy.com\/","pg":"","py":"","pe":"","ph":"","pn":"","pl":"https:\/\/www.ogilvy.pl\/pl\/strona-glowna\/","pt":"https:\/\/barogilvy.pt\/","pr":"","qa":"https:\/\/www.memacogilvy.com\/","ro":"","ru":"http:\/\/www.ogilvyrussia.ru\/","rw":"http:\/\/www.ogilvyrussia.ru\/","re":"","bl":"","sh":"","kn":"","lc":"","mf":"","vc":"","ws":"","sm":"","st":"","sa":"https:\/\/www.memacogilvy.com\/","sn":"","rs":"https:\/\/fullhouseogilvy.rs\/","sc":"","sl":"","sg":"https:\/\/ogilvy.sg\/","sx":"","sk":"","si":"","sb":"","so":"","za":"https:\/\/www.ogilvy.co.za\/","gs":"","kr":"http:\/\/www.ogilvy.co.kr\/kr","ss":"","es":"https:\/\/www.ogilvy.com\/es\/","lk":"http:\/\/ogilvy.lk\/","sd":"","sr":"","sj":"","se":"","ch":"https:\/\/www.ogilvy.ch\/","sy":"","tj":"","tz":"","th":"","tl":"","tg":"","tk":"","to":"","tt":"http:\/\/www.ogilvycaribbean.com\/","tn":"https:\/\/www.memacogilvy.com\/","tr":"https:\/\/www.ogilvy.com.tr\/","tm":"","tc":"","tv":"","ug":"","ua":"","ae":"https:\/\/www.ogilvy.com\/ae\/","gb":"https:\/\/www.ogilvy.com\/uk\/","us":"https:\/\/www.ogilvy.com\/","um":"","uy":"https:\/\/www.puntoogilvy.com.uy\/","uz":"","vu":"","ve":"","vn":"","vg":"","vi":"","wf":"","eh":"","ye":"","zm":"","zw":""},"default_cookies_for_others":1,"base_url":"https:\/\/www.ogilvy.com","geo_redirection_disable_option":1,"bots_list_to_disable_geo_redirection":"Googlebot|Googlebot-News|Googlebot-Image|Googlebot-Video|Mediapartners-Google|AdsBot-Google|AdsBot-Google-Mobile-Apps|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|Exabot|Facebot|facebookexternalhit|ia_archiver|Chrome-Lighthouse|GTmetrix|PTST","eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--categories\u0022\u003E\n\t\u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookies__policy\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022container\u0022\u003E\n\t\t\t\t\u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookies-wrp-new\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\u003Cp\u003E\u003Cspan\u003EOur use of cookies\u003C\/span\u003E\u003C\/p\u003E\u003Cp\u003EOgilvy.com uses cookies, some are necessary for the operation of the website and some are designed to improve your experience. For more information, \u003Ca href=\u0022\/cookies\u0022 target=\u0022_blank\u0022\u003Eclick here.\u003C\/a\u003E\u003C\/p\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-nc\u0022\u003ENecessary cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAre essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_active-border\u0022 target=\u0022nc\u0022 id=\u0022nc-popup-id\u0022 style=\u0022display:none;\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-nc\u0022 aria-labelledby =\u0022cookie-category-nc\u0022 value=\u0022nc\u0022  checked disabled \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-fc\u0022\u003EFunctional cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAllow Ogilvy.com to remember choices you make to give you better functionality and personal features.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022fc\u0022 id=\u0022fc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-fc\u0022 aria-labelledby =\u0022cookie-category-fc\u0022 value=\u0022fc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-pc\u0022\u003EPerformance cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHelp improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022pc\u0022 id=\u0022pc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-pc\u0022 aria-labelledby =\u0022cookie-category-pc\u0022 value=\u0022pc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons eu-cookie-compliance-has-categories\u0022\u003E\n\t\t\t\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022cookies__close agree-button\u0022 aria-labelledby=\u0022popup-buttons\u0022\u003E\n\t\t\t\t\t\t\t\u003Csvg id=\u0022close-icon\u0022 viewBox=\u00220 0 14.6 14.6\u0022 width=\u0022100%\u0022 height=\u0022100%\u0022\u003E\n\t\t\t\t\t\t\t\t\u003Cpath fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00221\u0022 d=\u0022M.3.3l14 14m0-14l-14 14\u0022\u003E\u003C\/path\u003E\n\t\t\t\t\t\t\t\u003C\/svg\u003E\n\t\t\t\t\t\t\u003C\/button\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--categories\u0022\u003E\n\t\u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n\t\t\u003Cdiv class=\u0022cookies__policy\u0022\u003E\n\t\t\t\u003Cdiv class=\u0022container\u0022\u003E\n\t\t\t\t\u003Cdiv id=\u0022eu-cookie-compliance-categories\u0022 class=\u0022cookies-wrp-new\u0022\u003E\n\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\n\t\t\t\t\t\u003C\/div\u003E\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-nc\u0022\u003ENecessary cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAre essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_active-border\u0022 target=\u0022nc\u0022 id=\u0022nc-popup-id\u0022 style=\u0022display:none;\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-nc\u0022 aria-labelledby =\u0022cookie-category-nc\u0022 value=\u0022nc\u0022  checked disabled \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-fc\u0022\u003EFunctional cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAllow Ogilvy.com to remember choices you make to give you better functionality and personal features.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022fc\u0022 id=\u0022fc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-fc\u0022 aria-labelledby =\u0022cookie-category-fc\u0022 value=\u0022fc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_clumn\u0022\u003E\n\t\t\t\t\t\t\t\t\t\u003Cspan for=\u0022cookie-category-pc\u0022\u003EPerformance cookies\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHelp improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv class=\u0022cookies_ani-border\u0022 target=\u0022pc\u0022 id=\u0022pc-popup-id\u0022\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cinput type=\u0022checkbox\u0022 class=\u0022cookies-checked\u0022 name=\u0022cookie-categories\u0022 id=\u0022cookie-category-pc\u0022 aria-labelledby =\u0022cookie-category-pc\u0022 value=\u0022pc\u0022 \u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cspan\u003E\u0026nbsp;\u003C\/span\u003E\n\t\t\t\t\t\t\t\t\t\t\u003Cp\u003EOff\u003C\/p\u003E\n\t\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons eu-cookie-compliance-has-categories\u0022\u003E\n\t\t\t\t\t\t\u003Cbutton type=\u0022button\u0022 class=\u0022cookies__close agree-button\u0022 aria-labelledby=\u0022popup-buttons\u0022\u003E\n\t\t\t\t\t\t\t\u003Csvg id=\u0022close-icon\u0022 viewBox=\u00220 0 14.6 14.6\u0022 width=\u0022100%\u0022 height=\u0022100%\u0022\u003E\n\t\t\t\t\t\t\t\t\u003Cpath fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00221\u0022 d=\u0022M.3.3l14 14m0-14l-14 14\u0022\u003E\u003C\/path\u003E\n\t\t\t\t\t\t\t\u003C\/svg\u003E\n\t\t\t\t\t\t\u003C\/button\u003E\n\t\t\t\t\t\u003C\/div\u003E\n\t\t\t\t\u003C\/div\u003E\n\t\t\t\u003C\/div\u003E\n\t\t\u003C\/div\u003E\n\t\u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/node\/116","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":true,"domain":"","domain_all_sites":false,"popup_eu_only":false,"popup_eu_only_js":false,"cookie_lifetime":30,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"categories","automatic_cookies_removal":true,"allowed_cookies":"is_form_submited\r\nis_first_visit\r\ncookie_agreed_countries","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022 role=\u0022document\u0022\u003E\n      \n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button \u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":["nc","fc","pc"],"cookie_categories_details":{"nc":{"uuid":"f4c074b5-41e2-4efe-aaf9-abead1265620","langcode":"en","status":true,"dependencies":[],"id":"nc","label":"Necessary cookies","description":"Are essential to move around Ogilvy.com and use its core functionality and enhanced features. Without these cookies, services you have asked for cannot be provided.","checkbox_default_state":"required","weight":0},"fc":{"uuid":"2b4b71a8-28d7-43f3-9778-97ee121f7ebf","langcode":"en","status":true,"dependencies":[],"id":"fc","label":"Functional cookies","description":"Allow Ogilvy.com to remember choices you make to give you better functionality and personal features.","checkbox_default_state":"unchecked","weight":1},"pc":{"uuid":"6bb0111c-9ec2-4d3f-a6db-a11b6ccce350","langcode":"en","status":true,"dependencies":[],"id":"pc","label":"Performance cookies","description":"Help improve the performance of Ogilvy.com by collecting and reporting information about how you use the website.","checkbox_default_state":"unchecked","weight":2}},"enable_save_preferences_button":false,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"olivero_primary_button_classes":"","olivero_secondary_button_classes":"","close_button_action":"close_banner","open_by_default":true,"modules_allow_popup":true,"hide_the_banner":false,"geoip_match":true},"node_alias_path":"\/home","node_id":"published","viewsAjaxGet":{"our_work_grid":"our_work_grid"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:40959eb3d9255910c06b4118c4ec59ab8f338e16bfec5ac769a5d6e80d5ed9fe":{"view_name":"our_work_grid","view_display_id":"our_work_grid","view_args":"","view_path":"\/node\/8436","view_base_path":null,"view_dom_id":"40959eb3d9255910c06b4118c4ec59ab8f338e16bfec5ac769a5d6e80d5ed9fe","pager_element":0},"views_dom_id:14618b6de62fb992b1385a7681497b489293809d7d777f18b111b3137998db3a":{"view_name":"splash_image_list","view_display_id":"splash_image","view_args":"","view_path":"\/node\/8436","view_base_path":null,"view_dom_id":"14618b6de62fb992b1385a7681497b489293809d7d777f18b111b3137998db3a","pager_element":0}}},"user":{"uid":0,"permissionsHash":"c8d5c78d200a922a6bdbcf2fe549ab819cf7876b8097f4150766134de270e5bf"}}
+	</script>
 	<script src="./Ogilvy_Demo_files/js_n_Vb2fqIhnBQEXk-yrzk5Yqu6FJjn73LVkzZmrE_znk.js.download"
 		type="text/javascript"></script>
 	<script async="" src="./Ogilvy_Demo_files/page.js.download" type="text/javascript"></script>
