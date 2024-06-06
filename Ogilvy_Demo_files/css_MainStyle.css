@@ -3386,16 +3386,16 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 
 @media (min-width:30.0625em) {
     .hero {
-        font-size: 2.8125rem;
+        font-size: 3rem;
         font-size: calc(1.875rem + 1.875 * ((100vw - 30.0625rem) / 49.9375))
     }
 }
 
 @media (min-width:80em) {
     .hero {
-        /* font-size: 3.75rem;
+        font-size: 2.75rem;
         letter-spacing: -.01em;
-        line-height: 1.0667; */
+        line-height: 1.5;
         letter-spacing: -.005em;
     }
 }
@@ -3430,7 +3430,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .hero p {
-    max-width: 18em
+    max-width: 28em
 }
 
 .hero>*>*+p {
@@ -3852,7 +3852,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 
 @media (min-width:30.0625em) and (min-height:30.0625em) {
     .splash__wrapper+* {
-        margin-top: 50vh
+        margin-top: 200vh
     }
 
     .splash__wrapper+*+* {
