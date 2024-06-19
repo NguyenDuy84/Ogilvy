@@ -2038,7 +2038,7 @@ body:after {
 }
 
 .section {
-    background: linear-gradient(135deg, #0252cb 0%, #020238 100%);;
+    background: linear-gradient(135deg, #db1212 0%, #020238 100%);;
     padding: 75px 0 2rem;
     padding-top: calc(75px + 4.5vw);
     position: relative
@@ -2203,7 +2203,7 @@ body:after {
 }
 
 .hero--alt .section__mask, .hero--alt .section__mask::after {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(237.2, 59.78%, 35.1%)), color-stop(9.9%, hsla(237.2, 59.78%, 35.1%, 0.98759)), color-stop(19.5%, hsla(237.2, 59.78%, 35.1%, 0.96314)), color-stop(28.7%, hsla(237.2, 59.78%, 35.1%, 0.926)), color-stop(37.3%, hsla(237.2, 59.78%, 35.1%, 0.87667)), color-stop(45.2%, hsla(237.2, 59.78%, 35.1%, 0.81624)), color-stop(52.3%, hsla(237.2, 59.78%, 35.1%, 0.74699)), color-stop(58.7%, hsla(237.2, 59.78%, 35.1%, 0.66999)), color-stop(64.4%, hsla(237.2, 59.78%, 35.1%, 0.58775)), color-stop(69.5%, hsla(237.2, 59.78%, 35.1%, 0.50184)), color-stop(74.1%, hsla(237.2, 59.78%, 35.1%, 0.41394)), color-stop(78.4%, hsla(237.2, 59.78%, 35.1%, 0.3238)), color-stop(82.6%, hsla(237.2, 59.78%, 35.1%, 0.23172)), color-stop(86.9%, hsla(237.2, 59.78%, 35.1%, 0.1409)), color-stop(92%, hsla(237.2, 59.78%, 35.1%, 0.0541)), to(hsla(237.2, 59.78%, 35.1%, 0)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(357, 63%, 54%)), color-stop(9.9%, hsla(352, 89%, 34%, 0.988)), color-stop(19.5%, hsla(352, 95%, 24%, 0.963)), color-stop(28.7%, hsla(355, 90%, 28%, 0.926)), color-stop(37.3%, hsla(0, 79%, 30%, 0.877)), color-stop(45.2%, hsla(352, 93%, 22%, 0.816)), color-stop(52.3%, hsla(0, 93%, 30%, 0.747)), color-stop(58.7%, hsla(347, 89%, 21%, 0.67)), color-stop(64.4%, hsla(352, 94%, 26%, 0.588)), color-stop(69.5%, hsla(352, 93%, 23%, 0.502)), color-stop(74.1%, hsla(0, 87%, 33%, 0.414)), color-stop(78.4%, hsla(357, 93%, 23%, 0.324)), color-stop(82.6%, hsla(237.2, 59.78%, 35.1%, 0.23172)), color-stop(86.9%, hsla(237.2, 59.78%, 35.1%, 0.1409)), color-stop(92%, hsla(237.2, 59.78%, 35.1%, 0.0541)), to(hsla(237.2, 59.78%, 35.1%, 0)));
     background-image: linear-gradient(hsl(237.2, 59.78%, 35.1%), hsla(237.2, 59.78%, 35.1%, 0.98759) 9.9%, hsla(237.2, 59.78%, 35.1%, 0.96314) 19.5%, hsla(237.2, 59.78%, 35.1%, 0.926) 28.7%, hsla(237.2, 59.78%, 35.1%, 0.87667) 37.3%, hsla(237.2, 59.78%, 35.1%, 0.81624) 45.2%, hsla(237.2, 59.78%, 35.1%, 0.74699) 52.3%, hsla(237.2, 59.78%, 35.1%, 0.66999) 58.7%, hsla(237.2, 59.78%, 35.1%, 0.58775) 64.4%, hsla(237.2, 59.78%, 35.1%, 0.50184) 69.5%, hsla(237.2, 59.78%, 35.1%, 0.41394) 74.1%, hsla(237.2, 59.78%, 35.1%, 0.3238) 78.4%, hsla(237.2, 59.78%, 35.1%, 0.23172) 82.6%, hsla(237.2, 59.78%, 35.1%, 0.1409) 86.9%, hsla(237.2, 59.78%, 35.1%, 0.0541) 92%, hsla(237.2, 59.78%, 35.1%, 0))
 }
 
@@ -3818,8 +3818,8 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash__wrapper {
-    background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
-    background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+    background-image: linear-gradient(135deg, #d60808 0%, #020238 100%);
+    background-image: linear-gradient(135deg, #d30d0d 0%, #020238 100%);
     display: block;
     left: 0;
     overflow-x: auto;
@@ -3860,7 +3860,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     }
 
     .splash__wrapper+*::before, .splash__wrapper+*+*::before {
-        /* background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%); */
+        background-image: linear-gradient(135deg, #db1212 0%, #020238 100%);
         bottom: 100%;
         content: '';
         height: 100vh;
@@ -3871,8 +3871,8 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     }
 
     .splash__wrapper+*+*::before {
-        background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
-        background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+        background-image: linear-gradient(135deg, #db1212 0%, #020238 100%);
+        background-image: linear-gradient(135deg, #db1212 0%, #020238 100%);
     }
 }
 
