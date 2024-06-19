@@ -173,7 +173,7 @@ template {
 }
 
 ::-moz-selection {
-    background-color: rgba(155, 63, 67, 0.5);
+    background-color: rgba(155, 27, 33, 0.966);
     background-color: var(--selection-color);
     color: inherit;
     text-shadow: inherit
@@ -1983,7 +1983,7 @@ body:after {
 }
 
 .site-footer--blue {
-    background-color: #24298f;
+    background-color: #800000;
     color: #fff
 }
 
@@ -2178,13 +2178,13 @@ body:after {
 }
 
 .hero .section__mask::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#0252cb), to(#0252cb));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#800000), to(#800000));
     background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
 }
 
 .hero--alt .section__mask::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#24298f), to(#24298f));
-    background-image: linear-gradient(#24298f, #24298f)
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#800000), to(#800000));
+    background-image: linear-gradient(#800000, #800000)
 }
 
 .hero--lemon .section__mask::before {
@@ -2193,8 +2193,8 @@ body:after {
 }
 
 .section__mask, .section__mask::after {
-    background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
-    background-image: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+    background-image: linear-gradient(135deg, #d81b3a 0%, #020238 100%);
+    background-image: linear-gradient(135deg, #dd142f 0%, #020238 100%);
 }
 
 .hero .section__mask, .hero .section__mask::after {
@@ -2203,8 +2203,8 @@ body:after {
 }
 
 .hero--alt .section__mask, .hero--alt .section__mask::after {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(237.2, 59.78%, 35.1%)), color-stop(9.9%, hsla(237.2, 59.78%, 35.1%, 0.98759)), color-stop(19.5%, hsla(237.2, 59.78%, 35.1%, 0.96314)), color-stop(28.7%, hsla(237.2, 59.78%, 35.1%, 0.926)), color-stop(37.3%, hsla(237.2, 59.78%, 35.1%, 0.87667)), color-stop(45.2%, hsla(237.2, 59.78%, 35.1%, 0.81624)), color-stop(52.3%, hsla(237.2, 59.78%, 35.1%, 0.74699)), color-stop(58.7%, hsla(237.2, 59.78%, 35.1%, 0.66999)), color-stop(64.4%, hsla(237.2, 59.78%, 35.1%, 0.58775)), color-stop(69.5%, hsla(237.2, 59.78%, 35.1%, 0.50184)), color-stop(74.1%, hsla(237.2, 59.78%, 35.1%, 0.41394)), color-stop(78.4%, hsla(237.2, 59.78%, 35.1%, 0.3238)), color-stop(82.6%, hsla(237.2, 59.78%, 35.1%, 0.23172)), color-stop(86.9%, hsla(237.2, 59.78%, 35.1%, 0.1409)), color-stop(92%, hsla(237.2, 59.78%, 35.1%, 0.0541)), to(hsla(237.2, 59.78%, 35.1%, 0)));
-    background-image: linear-gradient(hsl(237.2, 59.78%, 35.1%), hsla(237.2, 59.78%, 35.1%, 0.98759) 9.9%, hsla(237.2, 59.78%, 35.1%, 0.96314) 19.5%, hsla(237.2, 59.78%, 35.1%, 0.926) 28.7%, hsla(237.2, 59.78%, 35.1%, 0.87667) 37.3%, hsla(237.2, 59.78%, 35.1%, 0.81624) 45.2%, hsla(237.2, 59.78%, 35.1%, 0.74699) 52.3%, hsla(237.2, 59.78%, 35.1%, 0.66999) 58.7%, hsla(237.2, 59.78%, 35.1%, 0.58775) 64.4%, hsla(237.2, 59.78%, 35.1%, 0.50184) 69.5%, hsla(237.2, 59.78%, 35.1%, 0.41394) 74.1%, hsla(237.2, 59.78%, 35.1%, 0.3238) 78.4%, hsla(237.2, 59.78%, 35.1%, 0.23172) 82.6%, hsla(237.2, 59.78%, 35.1%, 0.1409) 86.9%, hsla(237.2, 59.78%, 35.1%, 0.0541) 92%, hsla(237.2, 59.78%, 35.1%, 0))
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(347, 85%, 47%)), color-stop(9.9%, hsla(355, 78%, 35%, 0.988)), color-stop(19.5%, hsla(357, 89%, 24%, 0.963)), color-stop(28.7%, hsla(357, 85%, 33%, 0.926)), color-stop(37.3%, hsla(355, 91%, 31%, 0.877)), color-stop(45.2%, hsla(355, 88%, 32%, 0.816)), color-stop(52.3%, hsla(357, 89%, 32%, 0.747)), color-stop(58.7%, hsla(0, 90%, 35%, 0.67)), color-stop(64.4%, hsla(352, 97%, 43%, 0.588)), color-stop(69.5%, hsla(352, 92%, 26%, 0.502)), color-stop(74.1%, hsla(237.2, 59.78%, 35.1%, 0.41394)), color-stop(78.4%, hsla(237.2, 59.78%, 35.1%, 0.3238)), color-stop(82.6%, hsla(237.2, 59.78%, 35.1%, 0.23172)), color-stop(86.9%, hsla(237.2, 59.78%, 35.1%, 0.1409)), color-stop(92%, hsla(237.2, 59.78%, 35.1%, 0.0541)), to(hsla(237.2, 59.78%, 35.1%, 0)));
+    background-image: linear-gradient(hsl(0, 65%, 54%), hsla(352, 86%, 32%, 0.988) 9.9%, hsla(0, 86%, 34%, 0.963) 19.5%, hsla(350, 89%, 25%, 0.926) 28.7%, hsla(350, 93%, 39%, 0.877) 37.3%, hsla(352, 91%, 22%, 0.816) 45.2%, hsla(355, 81%, 33%, 0.747) 52.3%, hsla(0, 88%, 32%, 0.67) 58.7%, hsla(0, 95%, 24%, 0.588) 64.4%, hsla(357, 88%, 41%, 0.502) 69.5%, hsla(350, 92%, 41%, 0.795) 74.1%, hsla(237.2, 59.78%, 35.1%, 0.3238) 78.4%, hsla(237.2, 59.78%, 35.1%, 0.23172) 82.6%, hsla(237.2, 59.78%, 35.1%, 0.1409) 86.9%, hsla(237.2, 59.78%, 35.1%, 0.0541) 92%, hsla(352, 89%, 28%, 0))
 }
 
 .hero--lemon .section__mask, .hero--lemon .section__mask::after {
@@ -2232,7 +2232,7 @@ body:after {
 
     .section__mask::before {
         height: 56.37179px;
-        background-color: #010220;
+        background-color: #130103;
         background-image: none !important;
         top: -1px;
         -webkit-transform: translate3d(0, 0, 0);
@@ -2258,11 +2258,11 @@ body:after {
     }
 
     .hero .section__mask::before {
-        background-color: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+        background-color: linear-gradient(135deg, #b81616 0%, #c50f0f 100%);
     }
 
     .hero--alt .section__mask::before {
-        background-color: #24298f
+        background-color: #800000
     }
 
     .hero--lemon .section__mask::before {
@@ -2819,7 +2819,7 @@ body:after {
 }
 
 .feed__item--video .feed__title-card, .feed__item--watch .feed__title-card {
-    background-color: #24298f;
+    background-color: #800000;
     color: #eb3f43
 }
 
@@ -3373,7 +3373,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+    background: linear-gradient(135deg, #b90c1a 0%, #1b0103 100%);
     color: #eb3f43;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3405,7 +3405,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .hero--alt {
-    background: #24298f
+    background: #800000
 }
 
 .hero--lemon {
@@ -3894,7 +3894,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash--blue {
-    background-color: #24298f
+    background-color: #800000
 }
 
 .splash--pink {

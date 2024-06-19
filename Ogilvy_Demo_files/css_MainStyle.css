@@ -1983,7 +1983,7 @@ body:after {
 }
 
 .site-footer--blue {
-    background-color: #24298f;
+    background-color: #bd0a19;
     color: #fff
 }
 
@@ -2258,11 +2258,11 @@ body:after {
     }
 
     .hero .section__mask::before {
-        background-color: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+        background-color: linear-gradient(135deg, #a50b25 0%, #500404 100%);
     }
 
     .hero--alt .section__mask::before {
-        background-color: #24298f
+        background-color: #9e0202
     }
 
     .hero--lemon .section__mask::before {
@@ -2819,7 +2819,7 @@ body:after {
 }
 
 .feed__item--video .feed__title-card, .feed__item--watch .feed__title-card {
-    background-color: #24298f;
+    background-color: #86040f;
     color: #eb3f43
 }
 
@@ -3373,7 +3373,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: linear-gradient(135deg, #0252cb 0%, #020238 100%);
+    background: linear-gradient(135deg, #800000 0%, #020238 100%);
     color: #eb3f43;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3894,7 +3894,7 @@ body.has-modal .modal__wrapper, body.has-feed-modal .feed-crm-pop_wrapper, body.
 }
 
 .splash--blue {
-    background-color: #24298f
+    background-color: #9e0a0a
 }
 
 .splash--pink {
@@ -11278,72 +11278,6 @@ a#edit-simplesamlphp-auth-login-link {
 
 .form-item-region, .form-item-interest {
     margin-top: 20px;
-}
-
-@media (min-width:1261px) {
-    html[lang="zh-hant"] footer .footer-right-nav li.social-list {
-        width: 80px;
-    }
-}
-
-@media (min-width:1261px) {
-    html[lang="es"] footer .footer-right-nav li.social-list {
-        width: 75px;
-    }
-}
-
-@media screen and (max-width:850px) {
-    .languages-list li a:hover, .languages-list li.is-active a {
-        color: #eb3f43 !important;
-    }
-
-    html[lang="fr"].has-red-nav .languages-list li a {
-        color: #A6A6A8;
-    }
-
-    html[lang="fr"].has-red-nav .languages-list li.is-active a {
-        color: #eb3f43 !important;
-    }
-
-    html[lang="it"].has-red-nav .languages-list li a {
-        color: #A6A6A8;
-    }
-
-    html[lang="it"].has-red-nav .languages-list li.is-active a {
-        color: #eb3f43 !important;
-    }
-
-    html[lang="zh-hans"].has-red-nav .languages-list li a {
-        color: #A6A6A8;
-    }
-
-    html[lang="zh-hans"].has-red-nav .languages-list li.is-active a {
-        color: #eb3f43 !important;
-    }
-
-    html[lang="en"].has-red-nav .languages-list li a {
-        color: #A6A6A8;
-    }
-
-    html[lang="en"].has-red-nav .languages-list li.is-active a {
-        color: #eb3f43 !important;
-    }
-
-    html[lang="en"].has-red-nav.has-red-nav1 .languages-list li a {
-        color: currentColor;
-    }
-
-    html[lang="en"].has-red-nav.has-red-nav1 .languages-list li.is-active a {
-        color: #fff !important;
-    }
-
-    html[lang="fr"].has-red-nav.has-red-nav1 .languages-list li a {
-        color: currentColor;
-    }
-
-    html[lang="fr"].has-red-nav.has-red-nav1 .languages-list li.is-active a {
-        color: #fff !important;
-    }
 }
 
 @media (min-width:1024px) and (max-width:1366px) {
